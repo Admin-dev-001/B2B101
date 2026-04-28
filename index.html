@@ -1,223 +1,499 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>B2B101 — 해외법인 설립 & 비즈니스 카드 발행</title>
-  <meta name="description" content="B2B101은 해외법인 설립부터 비즈니스 카드 발행까지 원스톱으로 제공합니다. 영국·미국·싱가포르·홍콩 등 15개국 지원." />
+  <meta name="description" content="B2B101은 해외법인 설립부터 비즈니스 카드 발행까지 원스톱으로 제공합니다."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-b">B2B</span><span class="logo-101">101</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><span>서비스 <span class="dropdown-arrow">▾</span></span>
+        <div class="dropdown">
+          <a href="card.html"><span class="d-icon">💳</span>비즈니스 카드 발행</a>
+          <a href="uk.html"><span class="d-icon">🏢</span>법인 설립 안내</a>
+          <a href="pricing.html"><span class="d-icon">💰</span>요금제</a>
+        </div>
+      </li>
+      <li><span>지원 국가 <span class="dropdown-arrow">▾</span></span>
+        <div class="dropdown">
+          <a href="uk.html"><span class="d-icon">🇬🇧</span>영국 (UK)</a>
+          <a href="us.html"><span class="d-icon">🇺🇸</span>미국 (US)</a>
+          <a href="sg.html"><span class="d-icon">🇸🇬</span>싱가포르</a>
+          <a href="hk.html"><span class="d-icon">🇭🇰</span>홍콩</a>
+        </div>
+      </li>
+      <li><a href="pricing.html">요금제</a></li>
+      <li><a href="about.html">회사 소개</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">문의</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="ko">KO</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="ja">JA</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="contact.html" class="btn-primary">무료 상담</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg-grid"></div>
-  <div class="container">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-badge">🌏 해외법인 설립 + 비즈니스 카드 원스톱</div>
-        <h1 class="hero-title">해외에서<br><span class="gradient-text">비즈니스를 시작하다</span></h1>
-        <p class="hero-sub">영국·미국·싱가포르·홍콩 등 15개국 이상에 법인을 설립하고,<br>즉시 사용 가능한 비즈니스 카드를 발행받으세요.</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn-primary btn-lg">지금 시작하기</a>
-          <a href="about.html" class="btn-outline btn-lg">B2B101 소개</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item"><span class="stat-num">500+</span><span class="stat-label">설립 법인</span></div>
-          <div class="stat-item"><span class="stat-num">15+</span><span class="stat-label">지원 국가</span></div>
-          <div class="stat-item"><span class="stat-num">48h</span><span class="stat-label">평균 설립 기간</span></div>
-          <div class="stat-item"><span class="stat-num">3개</span><span class="stat-label">지원 언어</span></div>
-        </div>
+  <div class="hero-inner container">
+    <div class="hero-content">
+      <div class="hero-badge">🌏 해외법인 설립 + 비즈니스 카드 원스톱</div>
+      <h1 class="hero-title">
+        해외에서<br>
+        <span class="gradient-text">비즈니스를 시작하다</span>
+      </h1>
+      <p class="hero-sub">영국·미국·싱가포르·홍콩 등 주요 국가에 법인을 설립하고,<br>즉시 사용 가능한 비즈니스 카드를 발행받으세요.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary btn-lg">지금 시작하기</a>
+        <a href="#process" class="btn-outline btn-lg">진행 절차 보기</a>
       </div>
-      <div class="hero-visual">
-        <div class="card-stack">
-          <div class="biz-card">
-            <div class="card-top">
-              <div class="card-logo">B2B<span>101</span></div>
-              <div class="card-chip"></div>
+      <div class="hero-trust">
+        <div class="trust-item"><span class="trust-num">500+</span><span class="trust-label">설립 법인</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span class="trust-num">15+</span><span class="trust-label">지원 국가</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span class="trust-num">48h</span><span class="trust-label">평균 설립 기간</span></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><span class="trust-num">3개</span><span class="trust-label">지원 언어</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="card-mockup">
+        <div class="biz-card">
+          <div class="biz-card-top">
+            <div class="biz-card-logo">B2B<span>101</span></div>
+            <div class="biz-card-chip"></div>
+          </div>
+          <div class="biz-card-number">•••• •••• •••• 4291</div>
+          <div class="biz-card-bottom">
+            <div>
+              <div class="biz-card-label">CARDHOLDER</div>
+              <div class="biz-card-name">YOUR COMPANY</div>
             </div>
-            <div class="card-number">•••• •••• •••• 4291</div>
-            <div class="card-bottom">
-              <div><div class="card-label">CARDHOLDER</div><div class="card-name">YOUR COMPANY</div></div>
-              <div class="card-circles"><div class="circle circle-l"></div><div class="circle circle-r"></div></div>
+            <div class="biz-card-network">
+              <div class="circle circle-l"></div>
+              <div class="circle circle-r"></div>
             </div>
           </div>
-          <div class="float-pill fp-1">✓ 법인 설립 완료</div>
-          <div class="float-pill fp-2">💳 카드 발행 완료</div>
-          <div class="float-pill fp-3">🌍 글로벌 결제 가능</div>
         </div>
+        <div class="float-badge float-1">✓ 법인 설립 완료</div>
+        <div class="float-badge float-2">💳 카드 발행 완료</div>
+        <div class="float-badge float-3">🌍 글로벌 결제 가능</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LOGOS -->
+<!-- LOGOS STRIP -->
 <section class="logos-strip">
   <div class="container">
-    <div class="logos-inner">
-      <span class="logos-label">지원 국가</span>
-      <div class="logos-flags">
-        <span>🇬🇧 UK</span><span>🇺🇸 US</span><span>🇸🇬 Singapore</span>
-        <span>🇭🇰 Hong Kong</span><span>🇪🇪 Estonia</span><span>🇩🇪 Germany</span>
-        <span>🇳🇱 Netherlands</span><span>🇦🇪 UAE</span>
-      </div>
+    <p class="logos-label">주요 파트너 및 지원 국가</p>
+    <div class="logos-track">
+      <div class="logo-item">🇬🇧 United Kingdom</div>
+      <div class="logo-item">🇺🇸 United States</div>
+      <div class="logo-item">🇸🇬 Singapore</div>
+      <div class="logo-item">🇭🇰 Hong Kong</div>
+      <div class="logo-item">🇪🇪 Estonia</div>
+      <div class="logo-item">🇩🇪 Germany</div>
+      <div class="logo-item">🇳🇱 Netherlands</div>
+      <div class="logo-item">🇦🇪 UAE</div>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="services-section" id="services">
+<section class="services" id="services">
   <div class="container">
-    <div class="section-header fade-up">
+    <div class="section-header">
       <div class="section-tag">핵심 서비스</div>
       <h2>두 가지 핵심 서비스,<br>하나의 플랫폼에서</h2>
       <p>복잡한 해외 비즈니스 설립을 B2B101이 처음부터 끝까지 책임집니다.</p>
     </div>
     <div class="services-grid">
-      <a href="services/formation.html" class="service-card fade-up">
-        <div class="svc-icon">🏢</div>
+      <div class="service-card fade-up">
+        <div class="service-icon">🏢</div>
         <h3>해외 법인 설립</h3>
-        <p>영국, 미국, 싱가포르 등 15개국 이상의 현지 법인을 빠르고 정확하게 설립합니다.</p>
-        <ul class="svc-features">
+        <p>영국, 미국, 싱가포르 등 15개국 이상의 현지 법인을 빠르고 정확하게 설립해 드립니다. 등기, 세무, 주소 서비스까지 포함.</p>
+        <ul class="service-list">
           <li>✓ 48시간 이내 법인 설립</li>
           <li>✓ 현지 등기 주소 제공</li>
           <li>✓ 세무 등록 지원</li>
           <li>✓ 법인 서류 일체 발급</li>
         </ul>
-        <span class="svc-link">자세히 보기 →</span>
-      </a>
-      <a href="services/card.html" class="service-card featured fade-up">
-        <div class="svc-icon">💳</div>
+        <a href="uk.html" class="btn-outline">법인 설립 알아보기</a>
+      </div>
+      <div class="service-card service-card--accent fade-up">
+        <div class="service-icon">💳</div>
         <h3>비즈니스 카드 발행</h3>
-        <p>법인 설립 후 즉시 Visa/Mastercard 비즈니스 카드를 발행합니다. 글로벌 결제 즉시 시작.</p>
-        <ul class="svc-features">
+        <p>법인 설립 후 즉시 Visa/Mastercard 계열 비즈니스 카드를 발행합니다. 해외 결제, 구독, 광고비 지출에 최적화.</p>
+        <ul class="service-list">
           <li>✓ 법인 설립 직후 즉시 발행</li>
           <li>✓ 다중 카드 발급 가능</li>
           <li>✓ 글로벌 온라인 결제</li>
           <li>✓ 지출 내역 실시간 관리</li>
         </ul>
-        <span class="svc-link">자세히 보기 →</span>
-      </a>
-      <a href="services/banking.html" class="service-card fade-up">
-        <div class="svc-icon">🏦</div>
+        <a href="card.html" class="btn-primary">카드 발행 알아보기</a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">📋</div>
+        <h3>컴플라이언스 관리</h3>
+        <p>연간 보고서 제출, 세무 신고, 주소 유지 등 법인 운영에 필요한 모든 컴플라이언스를 대행합니다.</p>
+        <ul class="service-list">
+          <li>✓ 연간 보고서 제출</li>
+          <li>✓ 세무 신고 대행</li>
+          <li>✓ 등기 주소 유지</li>
+          <li>✓ 전담 매니저 배정</li>
+        </ul>
+        <a href="contact.html" class="btn-outline">컴플라이언스 문의</a>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">🏦</div>
         <h3>비즈니스 계좌 개설</h3>
-        <p>Wise, Revolut, Payoneer 등 글로벌 핀테크 및 현지 은행 계좌 개설 지원.</p>
-        <ul class="svc-features">
+        <p>Wise, Revolut, Payoneer 등 글로벌 핀테크 및 현지 은행 계좌 개설을 지원합니다. 다중 통화 관리 가능.</p>
+        <ul class="service-list">
           <li>✓ 핀테크 계좌 즉시 개설</li>
           <li>✓ 다중 통화 지원</li>
           <li>✓ 현지 IBAN 계좌</li>
+          <li>✓ 국제 송금 최적화</li>
         </ul>
-        <span class="svc-link">자세히 보기 →</span>
-      </a>
-      <a href="services/compliance.html" class="service-card fade-up">
-        <div class="svc-icon">📋</div>
-        <h3>컴플라이언스 관리</h3>
-        <p>연간 보고서 제출, 세무 신고, 주소 유지 등 법인 운영에 필요한 모든 컴플라이언스를 대행.</p>
-        <ul class="svc-features">
-          <li>✓ 연간 보고서 제출</li>
-          <li>✓ 세무 신고 대행</li>
-          <li>✓ 전담 매니저 배정</li>
-        </ul>
-        <span class="svc-link">자세히 보기 →</span>
-      </a>
+        <a href="contact.html" class="btn-outline">계좌 개설 문의</a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- COUNTRIES -->
-<section class="countries-section" id="countries">
+<section class="countries" id="countries">
   <div class="container">
-    <div class="section-header fade-up">
+    <div class="section-header">
       <div class="section-tag">지원 국가</div>
       <h2>전 세계 주요 국가<br>법인 설립 지원</h2>
       <p>비즈니스 목적에 맞는 최적의 국가를 선택하세요.</p>
     </div>
     <div class="countries-grid">
-      <a href="countries/uk.html" class="country-card fade-up"><div class="cf">🇬🇧</div><h4>United Kingdom</h4><p>세계 금융 허브, 투명한 법인 체계</p><div class="c-tags"><span>LTD</span><span>48h</span></div></a>
-      <a href="countries/us.html" class="country-card fade-up"><div class="cf">🇺🇸</div><h4>United States</h4><p>델라웨어 LLC, 글로벌 투자 신뢰도</p><div class="c-tags"><span>LLC</span><span>C-Corp</span></div></a>
-      <a href="countries/sg.html" class="country-card fade-up"><div class="cf">🇸🇬</div><h4>Singapore</h4><p>아시아 비즈니스 허브, 낮은 법인세</p><div class="c-tags"><span>Pte.Ltd</span><span>17%</span></div></a>
-      <a href="countries/hk.html" class="country-card fade-up"><div class="cf">🇭🇰</div><h4>Hong Kong</h4><p>중국 관문, 자유무역항</p><div class="c-tags"><span>LTD</span><span>역외 비과세</span></div></a>
-      <a href="countries/ee.html" class="country-card fade-up"><div class="cf">🇪🇪</div><h4>Estonia</h4><p>E-Residency, 디지털 노마드 최적</p><div class="c-tags"><span>OÜ</span><span>EU</span></div></a>
-      <a href="countries/de.html" class="country-card fade-up"><div class="cf">🇩🇪</div><h4>Germany</h4><p>유럽 최대 시장, 강력한 브랜드 신뢰</p><div class="c-tags"><span>GmbH</span><span>EU</span></div></a>
-      <a href="countries/nl.html" class="country-card fade-up"><div class="cf">🇳🇱</div><h4>Netherlands</h4><p>EU 허브, 광범위한 조세조약</p><div class="c-tags"><span>BV</span><span>조세조약</span></div></a>
-      <a href="countries/ae.html" class="country-card fade-up"><div class="cf">🇦🇪</div><h4>UAE (Dubai)</h4><p>0% 법인세, 중동 비즈니스 허브</p><div class="c-tags"><span>Free Zone</span><span>0%세율</span></div></a>
+      <a href="uk.html" class="country-card fade-up">
+        <div class="country-flag">🇬🇧</div>
+        <h4>United Kingdom</h4>
+        <p>세계 금융 허브, 투명한 법인 체계</p>
+        <div class="country-tags"><span>LTD</span><span>48h</span></div>
+      </a>
+      <a href="us.html" class="country-card fade-up">
+        <div class="country-flag">🇺🇸</div>
+        <h4>United States</h4>
+        <p>델라웨어/와이오밍 LLC, 글로벌 신뢰도</p>
+        <div class="country-tags"><span>LLC</span><span>C-Corp</span></div>
+      </a>
+      <a href="sg.html" class="country-card fade-up">
+        <div class="country-flag">🇸🇬</div>
+        <h4>Singapore</h4>
+        <p>아시아 비즈니스 허브, 낮은 법인세</p>
+        <div class="country-tags"><span>PTE LTD</span><span>17%세율</span></div>
+      </a>
+      <a href="hk.html" class="country-card fade-up">
+        <div class="country-flag">🇭🇰</div>
+        <h4>Hong Kong</h4>
+        <p>중국 비즈니스 관문, 자유무역 항구</p>
+        <div class="country-tags"><span>LTD</span><span>낮은 세율</span></div>
+      </a>
+      <a href="contact.html" class="country-card fade-up">
+        <div class="country-flag">🇪🇪</div>
+        <h4>Estonia</h4>
+        <p>E-Residency, 디지털 노마드 최적</p>
+        <div class="country-tags"><span>OÜ</span><span>디지털</span></div>
+      </a>
+      <a href="contact.html" class="country-card fade-up">
+        <div class="country-flag">🇩🇪</div>
+        <h4>Germany</h4>
+        <p>유럽 최대 시장, 강력한 브랜드 신뢰</p>
+        <div class="country-tags"><span>GmbH</span><span>EU내수</span></div>
+      </a>
+      <a href="contact.html" class="country-card fade-up">
+        <div class="country-flag">🇳🇱</div>
+        <h4>Netherlands</h4>
+        <p>EU 진출 관문, 세금 조약 네트워크</p>
+        <div class="country-tags"><span>BV</span><span>EU허브</span></div>
+      </a>
+      <a href="contact.html" class="country-card fade-up">
+        <div class="country-flag">🇦🇪</div>
+        <h4>UAE (Dubai)</h4>
+        <p>무세율 프리존, 중동 비즈니스 허브</p>
+        <div class="country-tags"><span>Free Zone</span><span>0%세율</span></div>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section class="process-section" id="process">
+<section class="process" id="process">
   <div class="container">
-    <div class="section-header fade-up">
+    <div class="section-header">
       <div class="section-tag">진행 절차</div>
-      <h2>4단계로 완성되는 해외 법인 설립</h2>
+      <h2>4단계로 완성되는<br>해외 법인 설립</h2>
       <p>복잡한 서류와 절차, B2B101이 모두 대신합니다.</p>
     </div>
-    <div class="process-steps">
-      <div class="process-step fade-up"><div class="step-num">01</div><h4>상담 & 국가 선택</h4><p>비즈니스 목적 분석 후 최적 국가 추천. 무료 1:1 전문 상담.</p></div>
-      <div class="step-arrow">→</div>
-      <div class="process-step fade-up"><div class="step-num">02</div><h4>서류 제출</h4><p>최소 서류만 제출. 나머지는 B2B101이 처리.</p></div>
-      <div class="step-arrow">→</div>
-      <div class="process-step fade-up"><div class="step-num">03</div><h4>법인 설립 완료</h4><p>평균 48시간 이내 완료. 모든 서류 디지털 전달.</p></div>
-      <div class="step-arrow">→</div>
-      <div class="process-step fade-up"><div class="step-num">04</div><h4>계좌 & 카드 발행</h4><p>비즈니스 계좌 개설 + Visa/Mastercard 카드 즉시 발행.</p></div>
+    <div class="steps">
+      <div class="step fade-up">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h4>상담 & 국가 선택</h4>
+          <p>비즈니스 목적과 세금 전략을 분석하여 최적의 설립 국가를 추천합니다. 무료 1:1 전문 상담을 제공합니다.</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step fade-up">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h4>서류 제출 & 신청</h4>
+          <p>여권 사본, 주소증명 등 최소한의 서류만 제출하면 됩니다. 나머지는 B2B101이 처리합니다.</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step fade-up">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h4>법인 설립 완료</h4>
+          <p>평균 48시간 이내 법인 설립이 완료됩니다. 모든 서류를 디지털로 전달합니다.</p>
+        </div>
+      </div>
+      <div class="step-connector"></div>
+      <div class="step fade-up">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h4>계좌 & 카드 발행</h4>
+          <p>법인 설립 즉시 비즈니스 계좌를 개설하고 Visa/Mastercard 카드를 발행합니다.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- WHY US -->
-<section class="why-section">
+<!-- WHY -->
+<section class="why" id="why">
   <div class="container">
     <div class="why-inner">
-      <div class="why-left fade-up">
+      <div class="why-left">
         <div class="section-tag">B2B101을 선택하는 이유</div>
         <h2>단순 대행이 아닌<br>비즈니스 파트너</h2>
-        <p>전문 팀이 법인 설립부터 운영까지 장기적으로 함께합니다. 한국어·일본어·영어 전담 매니저가 언어 장벽 없이 지원합니다.</p>
-        <a href="about.html" class="btn-primary">회사 소개 보기</a>
+        <p>전문 팀이 법인 설립부터 운영까지 장기적으로 함께합니다.</p>
+        <a href="contact.html" class="btn-primary">전문가와 상담하기</a>
       </div>
       <div class="why-right">
         <div class="why-grid">
-          <div class="why-card fade-up"><div class="why-icon">⚡</div><h5>초고속 처리</h5><p>업계 최단 48시간 이내 법인 설립 완료</p></div>
-          <div class="why-card fade-up"><div class="why-icon">🛡️</div><h5>법적 보안성</h5><p>각국 현지 법무법인 파트너십으로 완벽한 컴플라이언스</p></div>
-          <div class="why-card fade-up"><div class="why-icon">🌐</div><h5>다국어 지원</h5><p>한국어·일본어·영어 전담 매니저</p></div>
-          <div class="why-card fade-up"><div class="why-icon">💰</div><h5>투명한 비용</h5><p>숨겨진 수수료 없는 명확한 가격 정책</p></div>
-          <div class="why-card fade-up"><div class="why-icon">📱</div><h5>온라인 원스톱</h5><p>방문 없이 온라인으로 모든 절차 완료</p></div>
-          <div class="why-card fade-up"><div class="why-icon">🔄</div><h5>지속적 관리</h5><p>설립 후 연간 컴플라이언스 지속 관리</p></div>
+          <div class="why-item fade-up"><div class="why-icon">⚡</div><h5>초고속 처리</h5><p>업계 최단 48시간 이내 법인 설립 완료</p></div>
+          <div class="why-item fade-up"><div class="why-icon">🛡️</div><h5>법적 보안성</h5><p>각국 현지 법무법인과 파트너십으로 완벽한 컴플라이언스</p></div>
+          <div class="why-item fade-up"><div class="why-icon">🌐</div><h5>다국어 지원</h5><p>한국어·일본어·영어 전담 매니저 배정</p></div>
+          <div class="why-item fade-up"><div class="why-icon">💰</div><h5>투명한 비용</h5><p>숨겨진 수수료 없는 명확한 가격 정책</p></div>
+          <div class="why-item fade-up"><div class="why-icon">📱</div><h5>온라인 원스톱</h5><p>방문 없이 온라인으로 모든 절차 완료</p></div>
+          <div class="why-item fade-up"><div class="why-icon">🔄</div><h5>지속적 관리</h5><p>설립 후 연간 컴플라이언스 지속 관리</p></div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">요금제</div>
+      <h2>명확하고 투명한 가격</h2>
+      <p>숨겨진 비용 없이, 필요한 서비스만 선택하세요.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card fade-up">
+        <div class="price-tag">스타터</div>
+        <div class="price-amount"><span class="price-currency">$</span><span class="price-num">299</span></div>
+        <p class="price-period">1회</p>
+        <p class="price-desc">기본 법인 설립이 필요한 스타트업을 위한 플랜</p>
+        <ul class="price-features">
+          <li>✓ 법인 설립 (1개국)</li>
+          <li>✓ 등기 주소 (1년)</li>
+          <li>✓ 법인 서류 발급</li>
+          <li>✓ 이메일 지원</li>
+          <li class="disabled">✗ 비즈니스 카드</li>
+          <li class="disabled">✗ 전담 매니저</li>
+        </ul>
+        <a href="contact.html" class="btn-outline btn-full">시작하기</a>
+      </div>
+      <div class="price-card price-card--featured fade-up">
+        <div class="price-popular">가장 인기</div>
+        <div class="price-tag">비즈니스</div>
+        <div class="price-amount"><span class="price-currency">$</span><span class="price-num">599</span></div>
+        <p class="price-period">1회</p>
+        <p class="price-desc">카드 발행까지 원스톱으로 필요한 팀을 위한 플랜</p>
+        <ul class="price-features">
+          <li>✓ 법인 설립 (1개국)</li>
+          <li>✓ 등기 주소 (1년)</li>
+          <li>✓ 법인 서류 발급</li>
+          <li>✓ 비즈니스 카드 발행</li>
+          <li>✓ 계좌 개설 지원</li>
+          <li>✓ 전담 매니저 (카카오/LINE)</li>
+        </ul>
+        <a href="contact.html" class="btn-primary btn-full">시작하기</a>
+      </div>
+      <div class="price-card fade-up">
+        <div class="price-tag">엔터프라이즈</div>
+        <div class="price-amount"><span class="price-currency"></span><span class="price-num" style="font-size:2rem">문의</span></div>
+        <p class="price-period">맞춤 견적</p>
+        <p class="price-desc">다국가 법인 및 복잡한 구조가 필요한 기업을 위한 플랜</p>
+        <ul class="price-features">
+          <li>✓ 다국가 법인 설립</li>
+          <li>✓ 세금 최적화 구조</li>
+          <li>✓ 법인 운영 전담 관리</li>
+          <li>✓ 복수 카드 발행</li>
+          <li>✓ 법무·세무 자문</li>
+          <li>✓ 24/7 전용 지원</li>
+        </ul>
+        <a href="contact.html" class="btn-outline btn-full">전문가 상담</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials-section">
+<section class="testimonials" id="testimonials">
   <div class="container">
-    <div class="section-header fade-up">
+    <div class="section-header">
       <div class="section-tag">고객 후기</div>
-      <h2>실제 고객들의 생생한 경험</h2>
+      <h2>실제 고객들의<br>생생한 경험</h2>
     </div>
-    <div class="testi-grid">
-      <div class="testi-card fade-up"><div class="testi-stars">★★★★★</div><p>"영국 법인 설립을 의뢰했는데 정말 48시간 만에 완료되어 깜짝 놀랐습니다. 카드도 바로 발급받아 즉시 비즈니스를 시작할 수 있었어요."</p><div class="testi-author"><div class="testi-avatar">김</div><div><strong>김지훈</strong><span>IT 스타트업 대표 · 서울</span></div></div></div>
-      <div class="testi-card fade-up"><div class="testi-stars">★★★★★</div><p>"싱가포르 법인을 설립하면서 세금 구조까지 함께 컨설팅받았습니다. 전담 매니저가 카카오톡으로 빠르게 응답해주어 매우 만족합니다."</p><div class="testi-author"><div class="testi-avatar">田</div><div><strong>田中 誠</strong><span>EC사업자 · 도쿄</span></div></div></div>
-      <div class="testi-card fade-up"><div class="testi-stars">★★★★★</div><p>"여러 대행사를 알아봤는데 B2B101이 가장 투명한 가격과 빠른 처리를 제공했습니다. 특히 한국어 지원이 큰 장점이었어요."</p><div class="testi-author"><div class="testi-avatar">박</div><div><strong>박서연</strong><span>글로벌 무역업 · 부산</span></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-banner">
-  <div class="container">
-    <div class="cta-inner">
-      <h2>지금 바로 해외 법인을 설립하세요</h2>
-      <p>전문가가 처음부터 끝까지 함께합니다. 무료 상담으로 시작하세요.</p>
-      <div class="cta-actions">
-        <a href="contact.html" class="btn-primary btn-lg">무료 상담 신청</a>
-        <a href="pricing.html" class="btn-white btn-lg">요금제 보기</a>
+    <div class="testimonials-grid">
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"영국 법인 설립을 의뢰했는데 정말 48시간 만에 완료되어 깜짝 놀랐습니다. 카드도 바로 발급받아 즉시 비즈니스를 시작할 수 있었어요."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">김</div>
+          <div><strong>김지훈</strong><span>IT 스타트업 대표 · 서울</span></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"싱가포르 법인을 설립하면서 세금 구조까지 함께 컨설팅받았습니다. 전담 매니저가 LINE으로 빠르게 응답해주어 매우 만족합니다."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">田</div>
+          <div><strong>田中 誠</strong><span>EC사업자 · 도쿄</span></div>
+        </div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"여러 대행사를 알아봤는데 B2B101이 가장 투명한 가격과 빠른 처리를 제공했습니다. 특히 한국어 지원이 큰 장점이었어요."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">박</div>
+          <div><strong>박서연</strong><span>글로벌 무역업 · 부산</span></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<script src="js/components.js"></script>
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">FAQ</div>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q">법인 설립에 직접 방문이 필요한가요?</button><div class="faq-a"><p>아닙니다. 모든 절차는 온라인으로 완료됩니다. 여권 사본 등 기본 서류를 이메일로 제출하시면 됩니다.</p></div></div>
+      <div class="faq-item"><button class="faq-q">법인 설립까지 얼마나 걸리나요?</button><div class="faq-a"><p>국가마다 다르지만 영국 기준 평균 24~48시간, 싱가포르는 1~3 영업일이 소요됩니다.</p></div></div>
+      <div class="faq-item"><button class="faq-q">비즈니스 카드는 어떤 종류인가요?</button><div class="faq-a"><p>Visa 또는 Mastercard 계열의 법인 비즈니스 카드로, 전 세계 온·오프라인 결제가 가능합니다.</p></div></div>
+      <div class="faq-item"><button class="faq-q">한국 거주자도 해외 법인을 설립할 수 있나요?</button><div class="faq-a"><p>네, 가능합니다. 대부분의 국가에서 비거주자도 법인 설립이 가능합니다. 상담 시 자세히 안내드립니다.</p></div></div>
+      <div class="faq-item"><button class="faq-q">일본어 지원도 가능한가요?</button><div class="faq-a"><p>네, B2B101은 한국어·일본어·영어 전담 매니저가 있습니다. LINE을 통한 일본어 상담이 가능합니다.</p></div></div>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="faq.html" class="btn-outline">모든 FAQ 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <div class="section-tag">무료 상담 신청</div>
+        <h2>지금 바로<br>시작하세요</h2>
+        <p>전문가가 비즈니스 목적에 맞는 최적의 설립 방안을 무료로 상담해 드립니다.</p>
+        <div class="contact-channels">
+          <div class="channel-item"><span class="channel-icon">💬</span><div><strong>KakaoTalk</strong><span>@b2b101</span></div></div>
+          <div class="channel-item"><span class="channel-icon">📱</span><div><strong>LINE</strong><span>@b2b101jp</span></div></div>
+          <div class="channel-item"><span class="channel-icon">✉️</span><div><strong>Email</strong><span>hello@b2b101.com</span></div></div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>이름</label><input type="text" placeholder="홍길동" required/></div>
+            <div class="form-group"><label>이메일</label><input type="email" placeholder="hello@example.com" required/></div>
+          </div>
+          <div class="form-group">
+            <label>관심 국가</label>
+            <select><option value="">선택하세요</option><option>🇬🇧 영국 (UK)</option><option>🇺🇸 미국 (US)</option><option>🇸🇬 싱가포르</option><option>🇭🇰 홍콩</option><option>기타</option></select>
+          </div>
+          <div class="form-group">
+            <label>필요한 서비스</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label"><input type="checkbox"> 법인 설립</label>
+              <label class="checkbox-label"><input type="checkbox"> 비즈니스 카드</label>
+              <label class="checkbox-label"><input type="checkbox"> 계좌 개설</label>
+              <label class="checkbox-label"><input type="checkbox"> 컴플라이언스</label>
+            </div>
+          </div>
+          <div class="form-group"><label>문의 내용</label><textarea rows="4" placeholder="궁금한 점이나 비즈니스 상황을 자유롭게 적어주세요."></textarea></div>
+          <button type="submit" class="btn-primary btn-full" style="font-size:1rem;padding:16px">무료 상담 신청하기</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-b">B2B</span><span class="logo-101">101</span></a>
+        <p>해외법인 설립 & 비즈니스 카드 발행<br>원스톱 글로벌 비즈니스 솔루션</p>
+        <div class="footer-langs">
+          <button data-lang="ko">🇰🇷 한국어</button>
+          <button data-lang="ja">🇯🇵 日本語</button>
+          <button data-lang="en">🇺🇸 English</button>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h5>서비스</h5><a href="card.html">카드 발행</a><a href="uk.html">법인 설립</a><a href="pricing.html">요금제</a></div>
+        <div class="footer-col"><h5>지원 국가</h5><a href="uk.html">🇬🇧 영국</a><a href="us.html">🇺🇸 미국</a><a href="sg.html">🇸🇬 싱가포르</a><a href="hk.html">🇭🇰 홍콩</a></div>
+        <div class="footer-col"><h5>회사</h5><a href="about.html">회사 소개</a><a href="faq.html">FAQ</a><a href="contact.html">문의하기</a></div>
+        <div class="footer-col"><h5>연락처</h5><a href="#">💬 카카오: @b2b101</a><a href="#">📱 LINE: @b2b101jp</a><a href="#">✉️ hello@b2b101.com</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 B2B101. All rights reserved.</p>
+      <p>본 서비스는 법무·세무 자문을 대체하지 않습니다.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">✓ 상담 신청이 완료되었습니다!</div>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
