@@ -76,37 +76,89 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="img-card-scene" id="imgCardScene">
-        <!-- 배경 오브 글로우 -->
-        <div class="ic-orb ic-orb1"></div>
-        <div class="ic-orb ic-orb2"></div>
+      <div class="pcard-scene" id="pcardScene">
+        <!-- 배경 오브 -->
+        <div class="pc-orb pc-orb1"></div>
+        <div class="pc-orb pc-orb2"></div>
+        <div class="pc-orb pc-orb3"></div>
 
-        <!-- 카드 이미지 래퍼 (3D 틸트) -->
-        <div class="img-card-wrap" id="imgCardWrap">
-          <!-- 실제 카드 이미지 -->
-          <img src="images/card-hero.png" alt="B2B101 비즈니스 카드" class="ic-img" id="icImg" draggable="false"/>
-          <!-- 홀로그램 글레어 오버레이 -->
-          <div class="ic-glare" id="icGlare"></div>
-          <!-- 엣지 글로우 -->
-          <div class="ic-edge-glow"></div>
+        <!-- 카드 래퍼 -->
+        <div class="pcard-wrap" id="pcardWrap">
+          <!-- 골드 테두리 -->
+          <div class="pc-border"></div>
+          <!-- 카드 본체 -->
+          <div class="pcard-body">
+            <!-- 유리 반사 하이라이트 -->
+            <div class="pc-shine"></div>
+            <!-- 블루 웨이브 -->
+            <svg class="pc-wave" viewBox="0 0 360 220" preserveAspectRatio="none">
+              <defs>
+                <filter id="pcglow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                <linearGradient id="pcwf" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#001166;stop-opacity:0.5"/>
+                  <stop offset="50%" style="stop-color:#0044cc;stop-opacity:0.75"/>
+                  <stop offset="100%" style="stop-color:#0088ff;stop-opacity:0.3"/>
+                </linearGradient>
+                <linearGradient id="pcwf2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#001a80;stop-opacity:0"/>
+                  <stop offset="40%" style="stop-color:#0055ff;stop-opacity:0.6"/>
+                  <stop offset="100%" style="stop-color:#00aaff;stop-opacity:0.2"/>
+                </linearGradient>
+                <linearGradient id="pclg" x1="0%" y1="50%" x2="100%" y2="50%">
+                  <stop offset="0%" style="stop-color:#0044cc;stop-opacity:0"/>
+                  <stop offset="25%" style="stop-color:#0077ff;stop-opacity:0.8"/>
+                  <stop offset="55%" style="stop-color:#aaddff;stop-opacity:1"/>
+                  <stop offset="80%" style="stop-color:#0077ff;stop-opacity:0.7"/>
+                  <stop offset="100%" style="stop-color:#0033cc;stop-opacity:0"/>
+                </linearGradient>
+              </defs>
+              <path d="M-5 130 C55 80,120 170,195 118 C268 66,318 152,365 108 L365 225 L-5 225Z" fill="url(#pcwf2)" opacity="0.85"/>
+              <path d="M-5 145 C60 92,128 185,200 132 C272 80,322 165,365 122 L365 225 L-5 225Z" fill="url(#pcwf)" opacity="0.7"/>
+              <path d="M-5 132 C58 78,126 172,198 120 C270 68,320 154,365 110" stroke="url(#pclg)" stroke-width="2.2" fill="none" filter="url(#pcglow)" opacity="1"/>
+              <path d="M-5 132 C58 78,126 172,198 120 C270 68,320 154,365 110" stroke="rgba(200,230,255,0.85)" stroke-width="0.7" fill="none"/>
+              <path d="M-5 150 C62 95,130 188,202 136 C274 84,323 168,365 126" stroke="rgba(0,100,255,0.4)" stroke-width="1.3" fill="none" filter="url(#pcglow)" opacity="0.7"/>
+              <ellipse cx="340" cy="168" rx="32" ry="55" fill="rgba(0,100,255,0.2)" filter="url(#pcglow)"/>
+            </svg>
+            <!-- 홀로그램 글레어 -->
+            <div class="pc-glare" id="pcGlare"></div>
+            <!-- 카드 내용 -->
+            <div class="pc-content">
+              <div class="pc-top">
+                <div class="pc-logo">
+                  <span class="pc-logo-b">B2B</span><span class="pc-logo-n">101</span>
+                  <div class="pc-sub">GLOBAL BUSINESS SOLUTIONS</div>
+                </div>
+                <div class="pc-chip">
+                  <div class="pc-chip-inner">
+                    <div class="pci-row"><div class="pci-cell"></div><div class="pci-cell"></div><div class="pci-cell"></div></div>
+                    <div class="pci-row"><div class="pci-cell"></div><div class="pci-cell pci-mid"></div><div class="pci-cell"></div></div>
+                    <div class="pci-row"><div class="pci-cell"></div><div class="pci-cell"></div><div class="pci-cell"></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pc-number">••••  ••••  ••••  4291</div>
+              <div class="pc-bottom">
+                <div>
+                  <div class="pc-hlabel">CARDHOLDER</div>
+                  <div class="pc-hname">YOUR COMPANY</div>
+                  <div class="pc-valid"><span class="pc-vl">VALID THRU</span><span class="pc-vd">12/27</span></div>
+                </div>
+                <div class="pc-net">
+                  <div class="pc-nc pc-nc1"></div>
+                  <div class="pc-nc pc-nc2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- 플로팅 배지 -->
-        <div class="ic-badge ic-b1">
-          <span class="ic-dot"></span>
-          법인 설립 완료
-        </div>
-        <div class="ic-badge ic-b2">
-          <span>💳</span>
-          카드 즉시 발행
-        </div>
-        <div class="ic-badge ic-b3">
-          <span>🌍</span>
-          195개국 결제
-        </div>
+        <div class="pc-badge pc-b1"><span class="pc-dot"></span>법인 설립 완료</div>
+        <div class="pc-badge pc-b2"><span>💳</span>카드 즉시 발행</div>
+        <div class="pc-badge pc-b3"><span>🌍</span>195개국 결제</div>
 
-        <!-- 바닥 반사 글로우 -->
-        <div class="ic-floor-glow"></div>
+        <!-- 바닥 글로우 -->
+        <div class="pc-floor"></div>
       </div>
     </div>
   </div>
@@ -505,90 +557,52 @@
 <div class="toast" id="toast">✓ 상담 신청이 완료되었습니다!</div>
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+
+
 <script>
 (function(){
-  var scene = document.querySelector('.glass-card-scene');
-  var card  = document.getElementById('glassCard');
-  if(!scene || !card) return;
-  scene.addEventListener('mousemove', function(e){
-    var r = scene.getBoundingClientRect();
-    var x = (e.clientX - r.left - r.width/2)  / (r.width/2);
-    var y = (e.clientY - r.top  - r.height/2) / (r.height/2);
-    card.style.animation = 'none';
-    card.style.transform = 'rotateY('+(x*20)+'deg) rotateX('+(-y*15)+'deg) scale(1.04)';
-  });
-  scene.addEventListener('mouseleave', function(){
-    card.style.animation = '';
-    card.style.transform = '';
-  });
-})();
-</script>
-<script>
-(function(){
-  var scene = document.getElementById('imgCardScene');
-  var wrap  = document.getElementById('imgCardWrap');
-  var glare = document.getElementById('icGlare');
+  var scene = document.getElementById('pcardScene');
+  var wrap  = document.getElementById('pcardWrap');
+  var glare = document.getElementById('pcGlare');
   if(!scene || !wrap) return;
 
-  var isHovering = false;
-  var rafId = null;
-  var targetX = 0, targetY = 0;
-  var currentX = 0, currentY = 0;
+  var tx=0,ty=0,cx=0,cy=0,hovering=false;
 
-  scene.addEventListener('mouseenter', function(){
-    isHovering = true;
-    wrap.style.animation = 'none';
-  });
+  scene.addEventListener('mouseenter', function(){ hovering=true; wrap.style.animation='none'; });
 
   scene.addEventListener('mousemove', function(e){
-    var r = scene.getBoundingClientRect();
-    targetX = (e.clientX - r.left  - r.width/2)  / (r.width/2);
-    targetY = (e.clientY - r.top   - r.height/2) / (r.height/2);
-
-    // 글레어 위치 업데이트
+    var r=scene.getBoundingClientRect();
+    tx=(e.clientX-r.left-r.width/2)/(r.width/2);
+    ty=(e.clientY-r.top-r.height/2)/(r.height/2);
     if(glare){
-      var gx = ((e.clientX - r.left) / r.width)  * 100;
-      var gy = ((e.clientY - r.top)  / r.height) * 100;
-      glare.style.background = 'radial-gradient(circle at '+gx+'% '+gy+'%, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.06) 30%, transparent 65%)';
+      var gx=((e.clientX-r.left)/r.width)*100;
+      var gy=((e.clientY-r.top)/r.height)*100;
+      glare.style.background='radial-gradient(circle at '+gx+'% '+gy+'%, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 35%, transparent 65%)';
     }
   });
 
   scene.addEventListener('mouseleave', function(){
-    isHovering = false;
-    targetX = 0;
-    targetY = 0;
-    if(glare) glare.style.background = 'none';
-    setTimeout(function(){
-      if(!isHovering){
-        wrap.style.animation = '';
-        wrap.style.transform = '';
-      }
-    }, 400);
+    hovering=false; tx=0; ty=0;
+    if(glare) glare.style.background='none';
+    setTimeout(function(){ if(!hovering){ wrap.style.animation=''; wrap.style.transform=''; } },350);
   });
 
-  // 부드러운 러그(lerp) 애니메이션
-  function lerp(a, b, t){ return a + (b - a) * t; }
-  function animate(){
-    if(isHovering){
-      currentX = lerp(currentX, targetX, 0.1);
-      currentY = lerp(currentY, targetY, 0.1);
-      var rotY  =  currentX * 22;
-      var rotX  = -currentY * 16;
-      var scale = 1 + Math.abs(currentX * 0.03) + Math.abs(currentY * 0.03);
-      wrap.style.transform = 'rotateY('+rotY+'deg) rotateX('+rotX+'deg) scale('+scale.toFixed(3)+')';
-      wrap.style.transition = 'box-shadow 0.3s ease';
+  function lerp(a,b,t){ return a+(b-a)*t; }
+  (function tick(){
+    if(hovering){
+      cx=lerp(cx,tx,0.1); cy=lerp(cy,ty,0.1);
+      var ry=cx*22, rx=-cy*16;
+      var sc=1+Math.abs(cx)*0.025+Math.abs(cy)*0.025;
+      wrap.style.transform='rotateY('+ry+'deg) rotateX('+rx+'deg) scale('+sc.toFixed(3)+')';
     }
-    rafId = requestAnimationFrame(animate);
-  }
-  animate();
+    requestAnimationFrame(tick);
+  })();
 
-  // 클릭 시 튕기는 효과
   wrap.addEventListener('click', function(){
-    wrap.style.transition = 'transform 0.15s cubic-bezier(0.34,1.56,0.64,1)';
-    wrap.style.transform += ' scale(0.96)';
-    setTimeout(function(){
-      wrap.style.transition = '';
-    }, 300);
+    wrap.style.transition='transform 0.12s cubic-bezier(0.34,1.56,0.64,1)';
+    var cur=wrap.style.transform;
+    wrap.style.transform=cur+' scale(0.95)';
+    setTimeout(function(){ wrap.style.transition=''; },250);
   });
 })();
 </script>
