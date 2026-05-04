@@ -76,27 +76,37 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="card-mockup">
-        <div class="biz-card">
-          <div class="biz-card-top">
-            <div class="biz-card-logo">B2B<span>101</span></div>
-            <div class="biz-card-chip"></div>
-          </div>
-          <div class="biz-card-number">•••• •••• •••• 4291</div>
-          <div class="biz-card-bottom">
-            <div>
-              <div class="biz-card-label">CARDHOLDER</div>
-              <div class="biz-card-name">YOUR COMPANY</div>
-            </div>
-            <div class="biz-card-network">
-              <div class="circle circle-l"></div>
-              <div class="circle circle-r"></div>
-            </div>
-          </div>
+      <div class="img-card-scene" id="imgCardScene">
+        <!-- 배경 오브 글로우 -->
+        <div class="ic-orb ic-orb1"></div>
+        <div class="ic-orb ic-orb2"></div>
+
+        <!-- 카드 이미지 래퍼 (3D 틸트) -->
+        <div class="img-card-wrap" id="imgCardWrap">
+          <!-- 실제 카드 이미지 -->
+          <img src="images/card-hero.png" alt="B2B101 비즈니스 카드" class="ic-img" id="icImg" draggable="false"/>
+          <!-- 홀로그램 글레어 오버레이 -->
+          <div class="ic-glare" id="icGlare"></div>
+          <!-- 엣지 글로우 -->
+          <div class="ic-edge-glow"></div>
         </div>
-        <div class="float-badge float-1">✓ 법인 설립 완료</div>
-        <div class="float-badge float-2">💳 카드 발행 완료</div>
-        <div class="float-badge float-3">🌍 글로벌 결제 가능</div>
+
+        <!-- 플로팅 배지 -->
+        <div class="ic-badge ic-b1">
+          <span class="ic-dot"></span>
+          법인 설립 완료
+        </div>
+        <div class="ic-badge ic-b2">
+          <span>💳</span>
+          카드 즉시 발행
+        </div>
+        <div class="ic-badge ic-b3">
+          <span>🌍</span>
+          195개국 결제
+        </div>
+
+        <!-- 바닥 반사 글로우 -->
+        <div class="ic-floor-glow"></div>
       </div>
     </div>
   </div>
@@ -495,5 +505,92 @@
 <div class="toast" id="toast">✓ 상담 신청이 완료되었습니다!</div>
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+<script>
+(function(){
+  var scene = document.querySelector('.glass-card-scene');
+  var card  = document.getElementById('glassCard');
+  if(!scene || !card) return;
+  scene.addEventListener('mousemove', function(e){
+    var r = scene.getBoundingClientRect();
+    var x = (e.clientX - r.left - r.width/2)  / (r.width/2);
+    var y = (e.clientY - r.top  - r.height/2) / (r.height/2);
+    card.style.animation = 'none';
+    card.style.transform = 'rotateY('+(x*20)+'deg) rotateX('+(-y*15)+'deg) scale(1.04)';
+  });
+  scene.addEventListener('mouseleave', function(){
+    card.style.animation = '';
+    card.style.transform = '';
+  });
+})();
+</script>
+<script>
+(function(){
+  var scene = document.getElementById('imgCardScene');
+  var wrap  = document.getElementById('imgCardWrap');
+  var glare = document.getElementById('icGlare');
+  if(!scene || !wrap) return;
+
+  var isHovering = false;
+  var rafId = null;
+  var targetX = 0, targetY = 0;
+  var currentX = 0, currentY = 0;
+
+  scene.addEventListener('mouseenter', function(){
+    isHovering = true;
+    wrap.style.animation = 'none';
+  });
+
+  scene.addEventListener('mousemove', function(e){
+    var r = scene.getBoundingClientRect();
+    targetX = (e.clientX - r.left  - r.width/2)  / (r.width/2);
+    targetY = (e.clientY - r.top   - r.height/2) / (r.height/2);
+
+    // 글레어 위치 업데이트
+    if(glare){
+      var gx = ((e.clientX - r.left) / r.width)  * 100;
+      var gy = ((e.clientY - r.top)  / r.height) * 100;
+      glare.style.background = 'radial-gradient(circle at '+gx+'% '+gy+'%, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.06) 30%, transparent 65%)';
+    }
+  });
+
+  scene.addEventListener('mouseleave', function(){
+    isHovering = false;
+    targetX = 0;
+    targetY = 0;
+    if(glare) glare.style.background = 'none';
+    setTimeout(function(){
+      if(!isHovering){
+        wrap.style.animation = '';
+        wrap.style.transform = '';
+      }
+    }, 400);
+  });
+
+  // 부드러운 러그(lerp) 애니메이션
+  function lerp(a, b, t){ return a + (b - a) * t; }
+  function animate(){
+    if(isHovering){
+      currentX = lerp(currentX, targetX, 0.1);
+      currentY = lerp(currentY, targetY, 0.1);
+      var rotY  =  currentX * 22;
+      var rotX  = -currentY * 16;
+      var scale = 1 + Math.abs(currentX * 0.03) + Math.abs(currentY * 0.03);
+      wrap.style.transform = 'rotateY('+rotY+'deg) rotateX('+rotX+'deg) scale('+scale.toFixed(3)+')';
+      wrap.style.transition = 'box-shadow 0.3s ease';
+    }
+    rafId = requestAnimationFrame(animate);
+  }
+  animate();
+
+  // 클릭 시 튕기는 효과
+  wrap.addEventListener('click', function(){
+    wrap.style.transition = 'transform 0.15s cubic-bezier(0.34,1.56,0.64,1)';
+    wrap.style.transform += ' scale(0.96)';
+    setTimeout(function(){
+      wrap.style.transition = '';
+    }, 300);
+  });
+})();
+</script>
 </body>
 </html>
