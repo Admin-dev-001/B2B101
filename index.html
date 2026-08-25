@@ -1,610 +1,272 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>B2B101 — 해외법인 설립 & 비즈니스 카드 발행</title>
-  <meta name="description" content="B2B101은 해외법인 설립부터 비즈니스 카드 발행까지 원스톱으로 제공합니다."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>B2B101 — Global Company Formation, Banking &amp; Card Issuance</title>
+<meta name="description" content="B2B101 forms your company across 15+ jurisdictions and connects you to banking, VISA cards, and payment network affiliation — all under one roof.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="zoom-style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="logo"><span class="logo-b">B2B</span><span class="logo-101">101</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><span>서비스 <span class="dropdown-arrow">▾</span></span>
-        <div class="dropdown">
-          <a href="card.html"><span class="d-icon">💳</span>비즈니스 카드 발행</a>
-          <a href="uk.html"><span class="d-icon">🏢</span>법인 설립 안내</a>
-          <a href="pricing.html"><span class="d-icon">💰</span>요금제</a>
-        </div>
-      </li>
-      <li><span>지원 국가 <span class="dropdown-arrow">▾</span></span>
-        <div class="dropdown">
-          <a href="uk.html"><span class="d-icon">🇬🇧</span>영국 (UK)</a>
-          <a href="us.html"><span class="d-icon">🇺🇸</span>미국 (US)</a>
-          <a href="sg.html"><span class="d-icon">🇸🇬</span>싱가포르</a>
-          <a href="hk.html"><span class="d-icon">🇭🇰</span>홍콩</a>
-        </div>
-      </li>
-      <li><a href="pricing.html">요금제</a></li>
-      <li><a href="about.html">회사 소개</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">문의</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="ko">KO</button>
-        <span class="lang-divider">|</span>
-        <button class="lang-btn" data-lang="ja">JA</button>
-        <span class="lang-divider">|</span>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <a href="contact.html" class="btn-primary">무료 상담</a>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
+<!-- NAV + ANNOUNCE + HERO share one relative wrapper so both bars float transparently over the gradient -->
+<div class="hero-wrap">
+<div id="nav-placeholder"></div>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-bg-grid"></div>
-  <div class="hero-inner container">
-    <div class="hero-content">
-      <div class="hero-badge">🌏 해외법인 설립 + 비즈니스 카드 원스톱</div>
-      <h1 class="hero-title">
-        해외에서<br>
-        <span class="gradient-text">비즈니스를 시작하다</span>
-      </h1>
-      <p class="hero-sub">영국·미국·싱가포르·홍콩 등 주요 국가에 법인을 설립하고,<br>즉시 사용 가능한 비즈니스 카드를 발행받으세요.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn-primary btn-lg">지금 시작하기</a>
-        <a href="#process" class="btn-outline btn-lg">진행 절차 보기</a>
-      </div>
-      <div class="hero-trust">
-        <div class="trust-item"><span class="trust-num">500+</span><span class="trust-label">설립 법인</span></div>
-        <div class="trust-divider"></div>
-        <div class="trust-item"><span class="trust-num">15+</span><span class="trust-label">지원 국가</span></div>
-        <div class="trust-divider"></div>
-        <div class="trust-item"><span class="trust-num">48h</span><span class="trust-label">평균 설립 기간</span></div>
-        <div class="trust-divider"></div>
-        <div class="trust-item"><span class="trust-num">3개</span><span class="trust-label">지원 언어</span></div>
+<!-- HERO ZONE (hero + carousel share one continuous gradient) -->
+<div class="hero-zone">
+  <header class="hero">
+    <div class="hero-slideshow">
+      <div class="hero-slide active" style="background-image:url('images/us-capitol-sunset.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/us-capitol-night.webp')"></div>
+      <div class="hero-slide" style="background-image:url('images/us-capitol-dome-interior.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/us-archives-fountain.jpg')"></div>
+    </div>
+    <div class="container hero-inner">
+      <h1 class="fade-up">Borderless business, all in one place.</h1>
+      <p class="fade-up">From company formation to card issuance and payment network affiliation — B2B101 designs your global business with you, from day one.</p>
+      <div class="hero-actions fade-up">
+        <a href="#services-carousel" class="btn btn-white">Explore Services</a>
+        <a href="contact.html" class="btn btn-grad">Find Your Plan</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="pcard-scene" id="pcardScene">
-        <!-- 배경 오브 -->
-        <div class="pc-orb pc-orb1"></div>
-        <div class="pc-orb pc-orb2"></div>
-        <div class="pc-orb pc-orb3"></div>
+  </header>
 
-        <!-- 카드 래퍼 -->
-        <div class="pcard-wrap" id="pcardWrap">
-          <!-- 골드 테두리 -->
-          <div class="pc-border"></div>
-          <!-- 카드 본체 -->
-          <div class="pcard-body">
-            <!-- 유리 반사 하이라이트 -->
-            <div class="pc-shine"></div>
-            <!-- 블루 웨이브 -->
-            <svg class="pc-wave" viewBox="0 0 360 220" preserveAspectRatio="none">
-              <defs>
-                <filter id="pcglow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-                <linearGradient id="pcwf" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#001166;stop-opacity:0.5"/>
-                  <stop offset="50%" style="stop-color:#0044cc;stop-opacity:0.75"/>
-                  <stop offset="100%" style="stop-color:#0088ff;stop-opacity:0.3"/>
-                </linearGradient>
-                <linearGradient id="pcwf2" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#001a80;stop-opacity:0"/>
-                  <stop offset="40%" style="stop-color:#0055ff;stop-opacity:0.6"/>
-                  <stop offset="100%" style="stop-color:#00aaff;stop-opacity:0.2"/>
-                </linearGradient>
-                <linearGradient id="pclg" x1="0%" y1="50%" x2="100%" y2="50%">
-                  <stop offset="0%" style="stop-color:#0044cc;stop-opacity:0"/>
-                  <stop offset="25%" style="stop-color:#0077ff;stop-opacity:0.8"/>
-                  <stop offset="55%" style="stop-color:#aaddff;stop-opacity:1"/>
-                  <stop offset="80%" style="stop-color:#0077ff;stop-opacity:0.7"/>
-                  <stop offset="100%" style="stop-color:#0033cc;stop-opacity:0"/>
-                </linearGradient>
-              </defs>
-              <path d="M-5 130 C55 80,120 170,195 118 C268 66,318 152,365 108 L365 225 L-5 225Z" fill="url(#pcwf2)" opacity="0.85"/>
-              <path d="M-5 145 C60 92,128 185,200 132 C272 80,322 165,365 122 L365 225 L-5 225Z" fill="url(#pcwf)" opacity="0.7"/>
-              <path d="M-5 132 C58 78,126 172,198 120 C270 68,320 154,365 110" stroke="url(#pclg)" stroke-width="2.2" fill="none" filter="url(#pcglow)" opacity="1"/>
-              <path d="M-5 132 C58 78,126 172,198 120 C270 68,320 154,365 110" stroke="rgba(200,230,255,0.85)" stroke-width="0.7" fill="none"/>
-              <path d="M-5 150 C62 95,130 188,202 136 C274 84,323 168,365 126" stroke="rgba(0,100,255,0.4)" stroke-width="1.3" fill="none" filter="url(#pcglow)" opacity="0.7"/>
-              <ellipse cx="340" cy="168" rx="32" ry="55" fill="rgba(0,100,255,0.2)" filter="url(#pcglow)"/>
-            </svg>
-            <!-- 홀로그램 글레어 -->
-            <div class="pc-glare" id="pcGlare"></div>
-            <!-- 카드 내용 -->
-            <div class="pc-content">
-              <div class="pc-top">
-                <div class="pc-logo">
-                  <span class="pc-logo-b">B2B</span><span class="pc-logo-n">101</span>
-                  <div class="pc-sub">GLOBAL BUSINESS SOLUTIONS</div>
-                </div>
-                <div class="pc-chip">
-                  <div class="pc-chip-inner">
-                    <div class="pci-row"><div class="pci-cell"></div><div class="pci-cell"></div><div class="pci-cell"></div></div>
-                    <div class="pci-row"><div class="pci-cell"></div><div class="pci-cell pci-mid"></div><div class="pci-cell"></div></div>
-                    <div class="pci-row"><div class="pci-cell"></div><div class="pci-cell"></div><div class="pci-cell"></div></div>
-                  </div>
-                </div>
-              </div>
-              <div class="pc-number">••••  ••••  ••••  4291</div>
-              <div class="pc-bottom">
-                <div>
-                  <div class="pc-hlabel">CARDHOLDER</div>
-                  <div class="pc-hname">YOUR COMPANY</div>
-                  <div class="pc-valid"><span class="pc-vl">VALID THRU</span><span class="pc-vd">12/27</span></div>
-                </div>
-                <div class="pc-net">
-                  <div class="pc-nc pc-nc1"></div>
-                  <div class="pc-nc pc-nc2"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 플로팅 배지 -->
-        <div class="pc-badge pc-b1"><span class="pc-dot"></span>법인 설립 완료</div>
-        <div class="pc-badge pc-b2"><span>💳</span>카드 즉시 발행</div>
-        <div class="pc-badge pc-b3"><span>🌍</span>195개국 결제</div>
-
-        <!-- 바닥 글로우 -->
-        <div class="pc-floor"></div>
+  <!-- CAROUSEL -->
+  <section class="carousel-wrap" id="services-carousel">
+    <div class="container">
+      <div class="carousel-head">
+        <h2>Pick the service<br>you need</h2>
       </div>
+    </div>
+    <div class="carousel-track-wrap">
+      <div class="carousel-track" id="track">
+        <div class="pcard"><img class="pcard-photo" loading="lazy" decoding="async" src="images/contract-document-stapled.jpg" alt="Company formation documents"><div class="pcard-tint" style="background:linear-gradient(160deg,rgba(58,63,209,.32),rgba(21,18,51,.55))"></div><div class="pcard-top"><div class="ic">🏢</div><span>Formation</span></div><div class="pcard-bottom">48 hrs average, 15+ jurisdictions</div></div>
+        <div class="pcard"><img class="pcard-photo" loading="lazy" decoding="async" src="images/checklist-formation.jpg" alt="Card issuance checklist"><div class="pcard-tint" style="background:linear-gradient(160deg,rgba(36,30,94,.3),rgba(21,18,51,.55))"></div><div class="pcard-top"><div class="ic">💳</div><span>Card Issuance</span></div><div class="pcard-bottom">Issued the moment formation completes</div></div>
+        <div class="pcard"><img class="pcard-photo" loading="lazy" decoding="async" src="images/boardroom-meeting-network.jpg" alt="Payment network negotiation meeting"><div class="pcard-tint" style="background:linear-gradient(160deg,rgba(58,63,209,.3),rgba(21,18,51,.58))"></div><div class="pcard-top"><div class="ic">🔗</div><span>Payment Network</span></div><div class="pcard-bottom">VISA · Mastercard · UnionPay</div></div>
+        <div class="pcard"><img class="pcard-photo" loading="lazy" decoding="async" src="images/lawyer-licensing-signing.jpg" alt="Financial licensing agreement signing"><div class="pcard-tint" style="background:linear-gradient(160deg,rgba(36,30,94,.32),rgba(21,18,51,.55))"></div><div class="pcard-top"><div class="ic">📜</div><span>Licensing</span></div><div class="pcard-bottom">EMI · PI · Crypto exchange</div></div>
+        <div class="pcard"><img class="pcard-photo" loading="lazy" decoding="async" src="images/office-team-readymade.jpg" alt="Active, operating ready-made company"><div class="pcard-tint" style="background:linear-gradient(160deg,rgba(58,63,209,.28),rgba(36,30,94,.55))"></div><div class="pcard-top"><div class="ic">🏛️</div><span>Ready-Made</span></div><div class="pcard-bottom">Active accounts, transfer-ready</div></div>
+        <div class="pcard"><img class="pcard-photo" loading="lazy" decoding="async" src="images/support-headset-manager.jpg" alt="Dedicated account manager support"><div class="pcard-tint" style="background:linear-gradient(160deg,rgba(21,18,51,.3),rgba(58,63,209,.3))"></div><div class="pcard-top"><div class="ic">🤝</div><span>Dedicated Manager</span></div><div class="pcard-bottom">With you from setup to operations</div></div>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <div class="car-arrow" id="prevBtn">‹</div>
+      <div class="dots" id="dots"></div>
+      <div class="car-arrow" id="nextBtn">›</div>
+    </div>
+  </section>
+</div>
+</div><!-- /.hero-wrap -->
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <h2 style="font-size:1.7rem;font-weight:800">B2B101 by the numbers</h2>
+    <div class="stats-grid">
+      <div class="stat-card fade-up"><div class="stat-num" data-count="500" data-suffix="+">0+</div><div class="stat-label">companies formed to date</div></div>
+      <div class="stat-card fade-up"><div class="stat-num" data-count="48" data-suffix="h">0h</div><div class="stat-label">average formation time</div></div>
+      <div class="stat-card fade-up"><div class="stat-num" data-count="15" data-suffix="+">0+</div><div class="stat-label">jurisdictions supported</div></div>
+    </div>
+    <div class="trust-line fade-up" style="margin-top:28px;color:var(--slate);font-size:.82rem">
+      <span>🛡️</span><span>SSL/TLS encrypted &amp; PCI DSS–aligned infrastructure</span>
     </div>
   </div>
 </section>
 
-<!-- LOGOS STRIP -->
-<section class="logos-strip">
+<!-- JURISDICTIONS -->
+<section class="jurisdictions">
   <div class="container">
-    <p class="logos-label">주요 파트너 및 지원 국가</p>
-    <div class="logos-track">
-      <div class="logo-item">🇬🇧 United Kingdom</div>
-      <div class="logo-item">🇺🇸 United States</div>
-      <div class="logo-item">🇸🇬 Singapore</div>
-      <div class="logo-item">🇭🇰 Hong Kong</div>
-      <div class="logo-item">🇪🇪 Estonia</div>
-      <div class="logo-item">🇩🇪 Germany</div>
-      <div class="logo-item">🇳🇱 Netherlands</div>
-      <div class="logo-item">🇦🇪 UAE</div>
+    <div class="section-header fade-up" style="text-align:center;max-width:600px;margin:0 auto 40px">
+      <div class="section-tag">Where We Operate</div>
+      <h2>Formation and banking across 6 core jurisdictions</h2>
+      <p style="color:var(--slate);margin-top:10px">Every engagement starts with a consultation to confirm the right fit for your business.</p>
+    </div>
+    <div class="jurisdiction-grid">
+      <div class="jurisdiction-card fade-up"><span class="jflag">🇺🇸</span><h4>United States</h4><p>Delaware</p></div>
+      <div class="jurisdiction-card fade-up"><span class="jflag">🇬🇧</span><h4>United Kingdom</h4><p>England &amp; Wales</p></div>
+      <div class="jurisdiction-card fade-up"><span class="jflag">🇸🇬</span><h4>Singapore</h4><p>ACRA-registered</p></div>
+      <div class="jurisdiction-card fade-up"><span class="jflag">🇭🇰</span><h4>Hong Kong</h4><p>Companies Registry</p></div>
+      <div class="jurisdiction-card fade-up"><span class="jflag">🇲🇾</span><h4>Malaysia</h4><p>SSM-registered</p></div>
+      <div class="jurisdiction-card fade-up"><span class="jflag">🇪🇪</span><h4>Estonia</h4><p>e-Residency compatible</p></div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">핵심 서비스</div>
-      <h2>두 가지 핵심 서비스,<br>하나의 플랫폼에서</h2>
-      <p>복잡한 해외 비즈니스 설립을 B2B101이 처음부터 끝까지 책임집니다.</p>
+<!-- SPLIT -->
+<section class="split">
+  <div class="container split-grid">
+    <div class="split-img fade-up">
+      <img loading="eager" decoding="async" onerror="this.style.display='none'" src="images/city-aerial-1.jpg">
+      <div class="split-tag">🌍 15+ jurisdictions supported</div>
     </div>
-    <div class="services-grid">
-      <div class="service-card fade-up">
-        <div class="service-icon">🏢</div>
-        <h3>해외 법인 설립</h3>
-        <p>영국, 미국, 싱가포르 등 15개국 이상의 현지 법인을 빠르고 정확하게 설립해 드립니다. 등기, 세무, 주소 서비스까지 포함.</p>
-        <ul class="service-list">
-          <li>✓ 48시간 이내 법인 설립</li>
-          <li>✓ 현지 등기 주소 제공</li>
-          <li>✓ 세무 등록 지원</li>
-          <li>✓ 법인 서류 일체 발급</li>
-        </ul>
-        <a href="uk.html" class="btn-outline">법인 설립 알아보기</a>
-      </div>
-      <div class="service-card service-card--accent fade-up">
-        <div class="service-icon">💳</div>
-        <h3>비즈니스 카드 발행</h3>
-        <p>법인 설립 후 즉시 Visa/Mastercard 계열 비즈니스 카드를 발행합니다. 해외 결제, 구독, 광고비 지출에 최적화.</p>
-        <ul class="service-list">
-          <li>✓ 법인 설립 직후 즉시 발행</li>
-          <li>✓ 다중 카드 발급 가능</li>
-          <li>✓ 글로벌 온라인 결제</li>
-          <li>✓ 지출 내역 실시간 관리</li>
-        </ul>
-        <a href="card.html" class="btn-primary">카드 발행 알아보기</a>
-      </div>
-      <div class="service-card fade-up">
-        <div class="service-icon">📋</div>
-        <h3>컴플라이언스 관리</h3>
-        <p>연간 보고서 제출, 세무 신고, 주소 유지 등 법인 운영에 필요한 모든 컴플라이언스를 대행합니다.</p>
-        <ul class="service-list">
-          <li>✓ 연간 보고서 제출</li>
-          <li>✓ 세무 신고 대행</li>
-          <li>✓ 등기 주소 유지</li>
-          <li>✓ 전담 매니저 배정</li>
-        </ul>
-        <a href="contact.html" class="btn-outline">컴플라이언스 문의</a>
-      </div>
-      <div class="service-card fade-up">
-        <div class="service-icon">🏦</div>
-        <h3>비즈니스 계좌 개설</h3>
-        <p>Wise, Revolut, Payoneer 등 글로벌 핀테크 및 현지 은행 계좌 개설을 지원합니다. 다중 통화 관리 가능.</p>
-        <ul class="service-list">
-          <li>✓ 핀테크 계좌 즉시 개설</li>
-          <li>✓ 다중 통화 지원</li>
-          <li>✓ 현지 IBAN 계좌</li>
-          <li>✓ 국제 송금 최적화</li>
-        </ul>
-        <a href="contact.html" class="btn-outline">계좌 개설 문의</a>
-      </div>
+    <div class="fade-up">
+      <span class="split-eyebrow">Why B2B101</span>
+      <h2>Fast, transparent, and with you the whole way</h2>
+      <p>No hidden fees, from formation to ongoing operations. Your dedicated manager stays with you. Company formation, payments, and licensing — handled in one place.</p>
+      <a href="contact.html" class="btn btn-navy">Learn More →</a>
     </div>
   </div>
 </section>
 
-<!-- COUNTRIES -->
-<section class="countries" id="countries">
+<!-- COMPARISON TABLE -->
+<section class="compare-section">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">지원 국가</div>
-      <h2>전 세계 주요 국가<br>법인 설립 지원</h2>
-      <p>비즈니스 목적에 맞는 최적의 국가를 선택하세요.</p>
+    <div class="section-header fade-up" style="text-align:center;max-width:600px;margin:0 auto 40px">
+      <div class="section-tag">B2B101 vs. Going It Alone</div>
+      <h2>What changes when everything's in one place</h2>
     </div>
-    <div class="countries-grid">
-      <a href="uk.html" class="country-card fade-up">
-        <div class="country-flag">🇬🇧</div>
-        <h4>United Kingdom</h4>
-        <p>세계 금융 허브, 투명한 법인 체계</p>
-        <div class="country-tags"><span>LTD</span><span>48h</span></div>
-      </a>
-      <a href="us.html" class="country-card fade-up">
-        <div class="country-flag">🇺🇸</div>
-        <h4>United States</h4>
-        <p>델라웨어/와이오밍 LLC, 글로벌 신뢰도</p>
-        <div class="country-tags"><span>LLC</span><span>C-Corp</span></div>
-      </a>
-      <a href="sg.html" class="country-card fade-up">
-        <div class="country-flag">🇸🇬</div>
-        <h4>Singapore</h4>
-        <p>아시아 비즈니스 허브, 낮은 법인세</p>
-        <div class="country-tags"><span>PTE LTD</span><span>17%세율</span></div>
-      </a>
-      <a href="hk.html" class="country-card fade-up">
-        <div class="country-flag">🇭🇰</div>
-        <h4>Hong Kong</h4>
-        <p>중국 비즈니스 관문, 자유무역 항구</p>
-        <div class="country-tags"><span>LTD</span><span>낮은 세율</span></div>
-      </a>
-      <a href="contact.html" class="country-card fade-up">
-        <div class="country-flag">🇪🇪</div>
-        <h4>Estonia</h4>
-        <p>E-Residency, 디지털 노마드 최적</p>
-        <div class="country-tags"><span>OÜ</span><span>디지털</span></div>
-      </a>
-      <a href="contact.html" class="country-card fade-up">
-        <div class="country-flag">🇩🇪</div>
-        <h4>Germany</h4>
-        <p>유럽 최대 시장, 강력한 브랜드 신뢰</p>
-        <div class="country-tags"><span>GmbH</span><span>EU내수</span></div>
-      </a>
-      <a href="contact.html" class="country-card fade-up">
-        <div class="country-flag">🇳🇱</div>
-        <h4>Netherlands</h4>
-        <p>EU 진출 관문, 세금 조약 네트워크</p>
-        <div class="country-tags"><span>BV</span><span>EU허브</span></div>
-      </a>
-      <a href="contact.html" class="country-card fade-up">
-        <div class="country-flag">🇦🇪</div>
-        <h4>UAE (Dubai)</h4>
-        <p>무세율 프리존, 중동 비즈니스 허브</p>
-        <div class="country-tags"><span>Free Zone</span><span>0%세율</span></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section class="process" id="process">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">진행 절차</div>
-      <h2>4단계로 완성되는<br>해외 법인 설립</h2>
-      <p>복잡한 서류와 절차, B2B101이 모두 대신합니다.</p>
-    </div>
-    <div class="steps">
-      <div class="step fade-up">
-        <div class="step-num">01</div>
-        <div class="step-content">
-          <h4>상담 & 국가 선택</h4>
-          <p>비즈니스 목적과 세금 전략을 분석하여 최적의 설립 국가를 추천합니다. 무료 1:1 전문 상담을 제공합니다.</p>
-        </div>
-      </div>
-      <div class="step-connector"></div>
-      <div class="step fade-up">
-        <div class="step-num">02</div>
-        <div class="step-content">
-          <h4>서류 제출 & 신청</h4>
-          <p>여권 사본, 주소증명 등 최소한의 서류만 제출하면 됩니다. 나머지는 B2B101이 처리합니다.</p>
-        </div>
-      </div>
-      <div class="step-connector"></div>
-      <div class="step fade-up">
-        <div class="step-num">03</div>
-        <div class="step-content">
-          <h4>법인 설립 완료</h4>
-          <p>평균 48시간 이내 법인 설립이 완료됩니다. 모든 서류를 디지털로 전달합니다.</p>
-        </div>
-      </div>
-      <div class="step-connector"></div>
-      <div class="step fade-up">
-        <div class="step-num">04</div>
-        <div class="step-content">
-          <h4>계좌 & 카드 발행</h4>
-          <p>법인 설립 즉시 비즈니스 계좌를 개설하고 Visa/Mastercard 카드를 발행합니다.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section class="why" id="why">
-  <div class="container">
-    <div class="why-inner">
-      <div class="why-left">
-        <div class="section-tag">B2B101을 선택하는 이유</div>
-        <h2>단순 대행이 아닌<br>비즈니스 파트너</h2>
-        <p>전문 팀이 법인 설립부터 운영까지 장기적으로 함께합니다.</p>
-        <a href="contact.html" class="btn-primary">전문가와 상담하기</a>
-      </div>
-      <div class="why-right">
-        <div class="why-grid">
-          <div class="why-item fade-up"><div class="why-icon">⚡</div><h5>초고속 처리</h5><p>업계 최단 48시간 이내 법인 설립 완료</p></div>
-          <div class="why-item fade-up"><div class="why-icon">🛡️</div><h5>법적 보안성</h5><p>각국 현지 법무법인과 파트너십으로 완벽한 컴플라이언스</p></div>
-          <div class="why-item fade-up"><div class="why-icon">🌐</div><h5>다국어 지원</h5><p>한국어·일본어·영어 전담 매니저 배정</p></div>
-          <div class="why-item fade-up"><div class="why-icon">💰</div><h5>투명한 비용</h5><p>숨겨진 수수료 없는 명확한 가격 정책</p></div>
-          <div class="why-item fade-up"><div class="why-icon">📱</div><h5>온라인 원스톱</h5><p>방문 없이 온라인으로 모든 절차 완료</p></div>
-          <div class="why-item fade-up"><div class="why-icon">🔄</div><h5>지속적 관리</h5><p>설립 후 연간 컴플라이언스 지속 관리</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="pricing" id="pricing">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">요금제</div>
-      <h2>명확하고 투명한 가격</h2>
-      <p>숨겨진 비용 없이, 필요한 서비스만 선택하세요.</p>
-    </div>
-    <div class="pricing-grid">
-      <div class="price-card fade-up">
-        <div class="price-tag">스타터</div>
-        <div class="price-amount"><span class="price-currency">$</span><span class="price-num">299</span></div>
-        <p class="price-period">1회</p>
-        <p class="price-desc">기본 법인 설립이 필요한 스타트업을 위한 플랜</p>
-        <ul class="price-features">
-          <li>✓ 법인 설립 (1개국)</li>
-          <li>✓ 등기 주소 (1년)</li>
-          <li>✓ 법인 서류 발급</li>
-          <li>✓ 이메일 지원</li>
-          <li class="disabled">✗ 비즈니스 카드</li>
-          <li class="disabled">✗ 전담 매니저</li>
-        </ul>
-        <a href="contact.html" class="btn-outline btn-full">시작하기</a>
-      </div>
-      <div class="price-card price-card--featured fade-up">
-        <div class="price-popular">가장 인기</div>
-        <div class="price-tag">비즈니스</div>
-        <div class="price-amount"><span class="price-currency">$</span><span class="price-num">599</span></div>
-        <p class="price-period">1회</p>
-        <p class="price-desc">카드 발행까지 원스톱으로 필요한 팀을 위한 플랜</p>
-        <ul class="price-features">
-          <li>✓ 법인 설립 (1개국)</li>
-          <li>✓ 등기 주소 (1년)</li>
-          <li>✓ 법인 서류 발급</li>
-          <li>✓ 비즈니스 카드 발행</li>
-          <li>✓ 계좌 개설 지원</li>
-          <li>✓ 전담 매니저 (카카오/LINE)</li>
-        </ul>
-        <a href="contact.html" class="btn-primary btn-full">시작하기</a>
-      </div>
-      <div class="price-card fade-up">
-        <div class="price-tag">엔터프라이즈</div>
-        <div class="price-amount"><span class="price-currency"></span><span class="price-num" style="font-size:2rem">문의</span></div>
-        <p class="price-period">맞춤 견적</p>
-        <p class="price-desc">다국가 법인 및 복잡한 구조가 필요한 기업을 위한 플랜</p>
-        <ul class="price-features">
-          <li>✓ 다국가 법인 설립</li>
-          <li>✓ 세금 최적화 구조</li>
-          <li>✓ 법인 운영 전담 관리</li>
-          <li>✓ 복수 카드 발행</li>
-          <li>✓ 법무·세무 자문</li>
-          <li>✓ 24/7 전용 지원</li>
-        </ul>
-        <a href="contact.html" class="btn-outline btn-full">전문가 상담</a>
-      </div>
+    <div class="compare-table-wrap fade-up">
+      <table class="compare-table">
+        <thead><tr><th></th><th>Traditional Route</th><th class="highlight">With B2B101</th></tr></thead>
+        <tbody>
+          <tr><td>Formation, banking, cards</td><td>Separate providers, separate contracts</td><td class="highlight">One team, one engagement</td></tr>
+          <tr><td>Pricing</td><td>Quoted piecemeal, fees can surface later</td><td class="highlight">Disclosed upfront before you commit</td></tr>
+          <tr><td>Point of contact</td><td>A different rep per provider</td><td class="highlight">One dedicated manager throughout</td></tr>
+          <tr><td>After formation</td><td>You're on your own for compliance</td><td class="highlight">Ongoing compliance support included</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">고객 후기</div>
-      <h2>실제 고객들의<br>생생한 경험</h2>
+<section class="testimonials">
+  <div class="section-header fade-up" style="text-align:center;max-width:560px;margin:0 auto 44px">
+    <div class="section-tag">Client Stories</div>
+    <h2>What founders say about working with us</h2>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="testi-card"><span class="testi-quote">"</span><p>Formation took under 48 hours and the card was ready the same week. Genuinely the smoothest process we've had setting up abroad.</p><div class="testi-person"><div class="testi-avatar">JK</div><div><strong>James Kim</strong><span>Founder, SaaS startup</span></div></div></div>
+      <div class="testi-card"><span class="testi-quote">"</span><p>Our dedicated manager handled the entire Singapore filing while we focused on product. Communication was fast and clear the whole way.</p><div class="testi-person"><div class="testi-avatar">MT</div><div><strong>Maria Torres</strong><span>COO, e-commerce brand</span></div></div></div>
+      <div class="testi-card"><span class="testi-quote">"</span><p>We compared three formation agencies — B2B101 was the only one that was upfront about every fee before we signed anything.</p><div class="testi-person"><div class="testi-avatar">DP</div><div><strong>David Park</strong><span>Trading company owner</span></div></div></div>
+      <div class="testi-card"><span class="testi-quote">"</span><p>Payment network affiliation is usually a black box. They walked us through every step and negotiated better terms than we expected.</p><div class="testi-person"><div class="testi-avatar">SL</div><div><strong>Sara Lindqvist</strong><span>Fintech founder</span></div></div></div>
+      <div class="testi-card"><span class="testi-quote">"</span><p>Formation took under 48 hours and the card was ready the same week. Genuinely the smoothest process we've had setting up abroad.</p><div class="testi-person"><div class="testi-avatar">JK</div><div><strong>James Kim</strong><span>Founder, SaaS startup</span></div></div></div>
+      <div class="testi-card"><span class="testi-quote">"</span><p>Our dedicated manager handled the entire Singapore filing while we focused on product. Communication was fast and clear the whole way.</p><div class="testi-person"><div class="testi-avatar">MT</div><div><strong>Maria Torres</strong><span>COO, e-commerce brand</span></div></div></div>
+      <div class="testi-card"><span class="testi-quote">"</span><p>We compared three formation agencies — B2B101 was the only one that was upfront about every fee before we signed anything.</p><div class="testi-person"><div class="testi-avatar">DP</div><div><strong>David Park</strong><span>Trading company owner</span></div></div></div>
+      <div class="testi-card"><span class="testi-quote">"</span><p>Payment network affiliation is usually a black box. They walked us through every step and negotiated better terms than we expected.</p><div class="testi-person"><div class="testi-avatar">SL</div><div><strong>Sara Lindqvist</strong><span>Fintech founder</span></div></div></div>
     </div>
-    <div class="testimonials-grid">
-      <div class="testi-card fade-up">
-        <div class="testi-stars">★★★★★</div>
-        <p>"영국 법인 설립을 의뢰했는데 정말 48시간 만에 완료되어 깜짝 놀랐습니다. 카드도 바로 발급받아 즉시 비즈니스를 시작할 수 있었어요."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">김</div>
-          <div><strong>김지훈</strong><span>IT 스타트업 대표 · 서울</span></div>
-        </div>
+  </div>
+</section>
+
+<!-- ESTIMATE WIDGET -->
+<section class="estimate-section">
+  <div class="container">
+    <div class="estimate-card fade-up">
+      <div class="estimate-copy">
+        <span class="section-tag" style="background:rgba(255,255,255,.15);color:#fff">Quick Start</span>
+        <h2 style="color:#fff;font-size:1.6rem;font-weight:800">Not sure where to start?</h2>
+        <p style="color:rgba(255,255,255,.85)">Tell us roughly what you're looking for and we'll follow up with a tailored plan. This isn't a price quote — every real number comes from an actual conversation with your dedicated manager.</p>
       </div>
-      <div class="testi-card fade-up">
-        <div class="testi-stars">★★★★★</div>
-        <p>"싱가포르 법인을 설립하면서 세금 구조까지 함께 컨설팅받았습니다. 전담 매니저가 LINE으로 빠르게 응답해주어 매우 만족합니다."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">田</div>
-          <div><strong>田中 誠</strong><span>EC사업자 · 도쿄</span></div>
-        </div>
-      </div>
-      <div class="testi-card fade-up">
-        <div class="testi-stars">★★★★★</div>
-        <p>"여러 대행사를 알아봤는데 B2B101이 가장 투명한 가격과 빠른 처리를 제공했습니다. 특히 한국어 지원이 큰 장점이었어요."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">박</div>
-          <div><strong>박서연</strong><span>글로벌 무역업 · 부산</span></div>
-        </div>
+      <div class="estimate-form">
+        <label for="est-jurisdiction">Jurisdiction</label>
+        <select id="est-jurisdiction">
+          <option>United States (Delaware)</option>
+          <option>United Kingdom</option>
+          <option>Singapore</option>
+          <option>Hong Kong</option>
+          <option>Malaysia</option>
+          <option>Estonia</option>
+          <option>Not sure yet</option>
+        </select>
+        <label for="est-service">What do you need?</label>
+        <select id="est-service">
+          <option>Company Formation</option>
+          <option>Card Issuance</option>
+          <option>Bank Account Opening</option>
+          <option>Payment Network Affiliation</option>
+          <option>Financial Licensing</option>
+          <option>Ready-Made Company</option>
+        </select>
+        <a href="contact.html" class="btn btn-white">Get My Plan →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">FAQ</div>
-      <h2>자주 묻는 질문</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item"><button class="faq-q">법인 설립에 직접 방문이 필요한가요?</button><div class="faq-a"><p>아닙니다. 모든 절차는 온라인으로 완료됩니다. 여권 사본 등 기본 서류를 이메일로 제출하시면 됩니다.</p></div></div>
-      <div class="faq-item"><button class="faq-q">법인 설립까지 얼마나 걸리나요?</button><div class="faq-a"><p>국가마다 다르지만 영국 기준 평균 24~48시간, 싱가포르는 1~3 영업일이 소요됩니다.</p></div></div>
-      <div class="faq-item"><button class="faq-q">비즈니스 카드는 어떤 종류인가요?</button><div class="faq-a"><p>Visa 또는 Mastercard 계열의 법인 비즈니스 카드로, 전 세계 온·오프라인 결제가 가능합니다.</p></div></div>
-      <div class="faq-item"><button class="faq-q">한국 거주자도 해외 법인을 설립할 수 있나요?</button><div class="faq-a"><p>네, 가능합니다. 대부분의 국가에서 비거주자도 법인 설립이 가능합니다. 상담 시 자세히 안내드립니다.</p></div></div>
-      <div class="faq-item"><button class="faq-q">일본어 지원도 가능한가요?</button><div class="faq-a"><p>네, B2B101은 한국어·일본어·영어 전담 매니저가 있습니다. LINE을 통한 일본어 상담이 가능합니다.</p></div></div>
-    </div>
-    <div style="text-align:center;margin-top:40px">
-      <a href="faq.html" class="btn-outline">모든 FAQ 보기</a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="container">
-    <div class="contact-inner">
-      <div class="contact-left">
-        <div class="section-tag">무료 상담 신청</div>
-        <h2>지금 바로<br>시작하세요</h2>
-        <p>전문가가 비즈니스 목적에 맞는 최적의 설립 방안을 무료로 상담해 드립니다.</p>
-        <div class="contact-channels">
-          <div class="channel-item"><span class="channel-icon">💬</span><div><strong>KakaoTalk</strong><span>@b2b101</span></div></div>
-          <div class="channel-item"><span class="channel-icon">📱</span><div><strong>LINE</strong><span>@b2b101jp</span></div></div>
-          <div class="channel-item"><span class="channel-icon">✉️</span><div><strong>Email</strong><span>hello@b2b101.com</span></div></div>
-        </div>
-      </div>
-      <div class="contact-right">
-        <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <div class="form-group"><label>이름</label><input type="text" placeholder="홍길동" required/></div>
-            <div class="form-group"><label>이메일</label><input type="email" placeholder="hello@example.com" required/></div>
-          </div>
-          <div class="form-group">
-            <label>관심 국가</label>
-            <select><option value="">선택하세요</option><option>🇬🇧 영국 (UK)</option><option>🇺🇸 미국 (US)</option><option>🇸🇬 싱가포르</option><option>🇭🇰 홍콩</option><option>기타</option></select>
-          </div>
-          <div class="form-group">
-            <label>필요한 서비스</label>
-            <div class="checkbox-group">
-              <label class="checkbox-label"><input type="checkbox"> 법인 설립</label>
-              <label class="checkbox-label"><input type="checkbox"> 비즈니스 카드</label>
-              <label class="checkbox-label"><input type="checkbox"> 계좌 개설</label>
-              <label class="checkbox-label"><input type="checkbox"> 컴플라이언스</label>
-            </div>
-          </div>
-          <div class="form-group"><label>문의 내용</label><textarea rows="4" placeholder="궁금한 점이나 비즈니스 상황을 자유롭게 적어주세요."></textarea></div>
-          <button type="submit" class="btn-primary btn-full" style="font-size:1rem;padding:16px">무료 상담 신청하기</button>
-        </form>
-      </div>
-    </div>
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-inner fade-up">
+    <h2>Start your business, today</h2>
+    <p>Get a free consultation with a dedicated manager and find the right structure for you.</p>
+    <a href="contact.html" class="btn btn-white">Free Consultation →</a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="logo"><span class="logo-b">B2B</span><span class="logo-101">101</span></a>
-        <p>해외법인 설립 & 비즈니스 카드 발행<br>원스톱 글로벌 비즈니스 솔루션</p>
-        <div class="footer-langs">
-          <button data-lang="ko">🇰🇷 한국어</button>
-          <button data-lang="ja">🇯🇵 日本語</button>
-          <button data-lang="en">🇺🇸 English</button>
-        </div>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col"><h5>서비스</h5><a href="card.html">카드 발행</a><a href="uk.html">법인 설립</a><a href="pricing.html">요금제</a></div>
-        <div class="footer-col"><h5>지원 국가</h5><a href="uk.html">🇬🇧 영국</a><a href="us.html">🇺🇸 미국</a><a href="sg.html">🇸🇬 싱가포르</a><a href="hk.html">🇭🇰 홍콩</a></div>
-        <div class="footer-col"><h5>회사</h5><a href="about.html">회사 소개</a><a href="faq.html">FAQ</a><a href="contact.html">문의하기</a></div>
-        <div class="footer-col"><h5>연락처</h5><a href="#">💬 카카오: @b2b101</a><a href="#">📱 LINE: @b2b101jp</a><a href="#">✉️ hello@b2b101.com</a></div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 B2B101. All rights reserved.</p>
-      <p>본 서비스는 법무·세무 자문을 대체하지 않습니다.</p>
-    </div>
-  </div>
-</footer>
+<div id="footer-placeholder"></div>
 
-<div class="toast" id="toast">✓ 상담 신청이 완료되었습니다!</div>
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
-
-
+<script src="zoom-components.js"></script>
 <script>
-(function(){
-  var scene = document.getElementById('pcardScene');
-  var wrap  = document.getElementById('pcardWrap');
-  var glare = document.getElementById('pcGlare');
-  if(!scene || !wrap) return;
+// Carousel — infinite loop: the card set is cloned once so scrolling (or autoplay)
+// never visibly "runs out"; when it crosses into the cloned half we silently snap
+// back by one set-width so it feels like it repeats forever.
+var track = document.getElementById('track');
+var originalCards = Array.prototype.slice.call(track.querySelectorAll('.pcard'));
+var n = originalCards.length;
+originalCards.forEach(function(card){ track.appendChild(card.cloneNode(true)); });
+var cards = track.querySelectorAll('.pcard');
 
-  var tx=0,ty=0,cx=0,cy=0,hovering=false;
+var dotsWrap = document.getElementById('dots');
+for(var i=0;i<n;i++){
+  var d = document.createElement('div');
+  d.className = 'dot' + (i===0?' active':'');
+  dotsWrap.appendChild(d);
+}
+var dots = dotsWrap.querySelectorAll('.dot');
 
-  scene.addEventListener('mouseenter', function(){ hovering=true; wrap.style.animation='none'; });
+function cardStep(){ return cards[0].offsetWidth + 14; }
+function setWidth(){ return cardStep() * n; }
 
-  scene.addEventListener('mousemove', function(e){
-    var r=scene.getBoundingClientRect();
-    tx=(e.clientX-r.left-r.width/2)/(r.width/2);
-    ty=(e.clientY-r.top-r.height/2)/(r.height/2);
-    if(glare){
-      var gx=((e.clientX-r.left)/r.width)*100;
-      var gy=((e.clientY-r.top)/r.height)*100;
-      glare.style.background='radial-gradient(circle at '+gx+'% '+gy+'%, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 35%, transparent 65%)';
-    }
-  });
+function updateDots(){
+  var idx = Math.round((track.scrollLeft % setWidth()) / cardStep()) % n;
+  dots.forEach(function(d,i){ d.classList.toggle('active', i===idx); });
+}
+function normalizeLoop(){
+  var w = setWidth();
+  if(track.scrollLeft >= w){ track.scrollLeft -= w; }
+  else if(track.scrollLeft < 0){ track.scrollLeft += w; }
+}
+track.addEventListener('scroll', function(){ updateDots(); });
+track.addEventListener('scrollend', normalizeLoop);
+// Fallback for browsers without 'scrollend'
+var scrollTimer;
+track.addEventListener('scroll', function(){
+  clearTimeout(scrollTimer);
+  scrollTimer = setTimeout(normalizeLoop, 150);
+});
 
-  scene.addEventListener('mouseleave', function(){
-    hovering=false; tx=0; ty=0;
-    if(glare) glare.style.background='none';
-    setTimeout(function(){ if(!hovering){ wrap.style.animation=''; wrap.style.transform=''; } },350);
-  });
+document.getElementById('nextBtn').addEventListener('click',function(){
+  pauseAutoplay();
+  track.scrollBy({left: cardStep(), behavior:'smooth'});
+  resumeAutoplaySoon();
+});
+document.getElementById('prevBtn').addEventListener('click',function(){
+  pauseAutoplay();
+  if(track.scrollLeft < cardStep()) track.scrollLeft += setWidth();
+  track.scrollBy({left: -cardStep(), behavior:'smooth'});
+  resumeAutoplaySoon();
+});
 
-  function lerp(a,b,t){ return a+(b-a)*t; }
-  (function tick(){
-    if(hovering){
-      cx=lerp(cx,tx,0.1); cy=lerp(cy,ty,0.1);
-      var ry=cx*22, rx=-cy*16;
-      var sc=1+Math.abs(cx)*0.025+Math.abs(cy)*0.025;
-      wrap.style.transform='rotateY('+ry+'deg) rotateX('+rx+'deg) scale('+sc.toFixed(3)+')';
-    }
-    requestAnimationFrame(tick);
-  })();
+// Autoplay — advances one card every 3.2s, loops forever, pauses on hover/touch
+var autoplayTimer;
+function startAutoplay(){
+  autoplayTimer = setInterval(function(){
+    track.scrollBy({left: cardStep(), behavior:'smooth'});
+  }, 3200);
+}
+function pauseAutoplay(){ clearInterval(autoplayTimer); }
+var resumeTimeout;
+function resumeAutoplaySoon(){
+  clearTimeout(resumeTimeout);
+  resumeTimeout = setTimeout(startAutoplay, 4000);
+}
+track.addEventListener('mouseenter', pauseAutoplay);
+track.addEventListener('mouseleave', startAutoplay);
+startAutoplay();
 
-  wrap.addEventListener('click', function(){
-    wrap.style.transition='transform 0.12s cubic-bezier(0.34,1.56,0.64,1)';
-    var cur=wrap.style.transform;
-    wrap.style.transform=cur+' scale(0.95)';
-    setTimeout(function(){ wrap.style.transition=''; },250);
-  });
-})();
 </script>
 </body>
 </html>

@@ -1,5 +1,90 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>문의하기 — B2B101</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body><nav class="navbar" id="navbar"><div class="nav-inner"><a href="index.html" class="logo"><span class="logo-b">B2B</span><span class="logo-101">101</span></a><ul class="nav-links" id="navLinks"><li><span>서비스 <span class="dropdown-arrow">▾</span></span><div class="dropdown"><a href="card.html"><span class="d-icon">💳</span>비즈니스 카드 발행</a><a href="uk.html"><span class="d-icon">🏢</span>법인 설립 안내</a><a href="pricing.html"><span class="d-icon">💰</span>요금제</a></div></li><li><span>지원 국가 <span class="dropdown-arrow">▾</span></span><div class="dropdown"><a href="uk.html"><span class="d-icon">🇬🇧</span>영국 (UK)</a><a href="us.html"><span class="d-icon">🇺🇸</span>미국 (US)</a><a href="sg.html"><span class="d-icon">🇸🇬</span>싱가포르</a><a href="hk.html"><span class="d-icon">🇭🇰</span>홍콩</a></div></li><li><a href="pricing.html">요금제</a></li><li><a href="about.html">회사 소개</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">문의</a></li></ul><div class="nav-right"><div class="lang-switcher"><button class="lang-btn active" data-lang="ko">KO</button><span class="lang-divider">|</span><button class="lang-btn" data-lang="ja">JA</button><span class="lang-divider">|</span><button class="lang-btn" data-lang="en">EN</button></div><a href="contact.html" class="btn-primary">무료 상담</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div></div></nav>
-<section class="page-hero"><div class="container"><div class="page-hero-badge">📬 무료 상담 신청</div><h1>지금 바로 <span class="gradient-text">시작하세요</span></h1><p>전문가가 귀사의 비즈니스 상황에 맞는 최적의 설립 방안을 무료로 상담해 드립니다.<br>평균 응답 시간: 영업일 기준 2시간 이내</p></div></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact Us — B2B101</title>
+<meta name="description" content="Get in touch with B2B101 for a free consultation on company formation, card issuance, or payments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="zoom-style.css">
+</head>
+<body>
 
-<section class="contact" style="padding:80px 0 100px"><div class="container"><div class="contact-inner"><div class="contact-left"><div class="section-tag">연락처</div><h2>언제든지<br>연락하세요</h2><p>카카오톡, LINE, 이메일 중 편한 방법으로 연락해 주세요. 한국어·일본어·영어 모두 가능합니다.</p><div class="contact-channels"><div class="channel-item"><span class="channel-icon">💬</span><div><strong>KakaoTalk (카카오톡)</strong><span>@b2b101 · 한국어 상담</span></div></div><div class="channel-item"><span class="channel-icon">📱</span><div><strong>LINE</strong><span>@b2b101jp · 日本語対応</span></div></div><div class="channel-item"><span class="channel-icon">✉️</span><div><strong>Email</strong><span>hello@b2b101.com</span></div></div><div class="channel-item"><span class="channel-icon">⏰</span><div><strong>응답 시간</strong><span>평일 09:00~18:00 KST (JST)</span></div></div></div><div style="margin-top:32px;padding:24px;background:var(--blue-pale);border-radius:var(--radius-sm);border:1px solid rgba(37,99,235,.2)"><h5 style="color:var(--blue);margin-bottom:8px">✓ 무료 상담에서 받으실 수 있는 것</h5><ul style="list-style:none;display:flex;flex-direction:column;gap:6px"><li style="font-size:.86rem;color:var(--gray-600)">✓ 최적 설립 국가 추천</li><li style="font-size:.86rem;color:var(--gray-600)">✓ 법인 형태 (LLC/LTD 등) 안내</li><li style="font-size:.86rem;color:var(--gray-600)">✓ 예상 비용 및 일정 안내</li><li style="font-size:.86rem;color:var(--gray-600)">✓ 세무 구조 기초 안내</li></ul></div></div><div class="contact-right"><div class="contact-form"><h3 style="margin-bottom:24px">상담 신청서</h3><form id="contactForm"><div class="form-row"><div class="form-group"><label>이름 *</label><input type="text" placeholder="홍길동" required/></div><div class="form-group"><label>이메일 *</label><input type="email" placeholder="hello@example.com" required/></div></div><div class="form-row"><div class="form-group"><label>연락처</label><input type="tel" placeholder="+82-10-0000-0000"/></div><div class="form-group"><label>국적 / 거주국</label><select><option value="">선택하세요</option><option>한국</option><option>일본</option><option>기타</option></select></div></div><div class="form-group"><label>관심 국가 *</label><select required><option value="">설립 희망 국가를 선택하세요</option><option>🇬🇧 영국 (UK)</option><option>🇺🇸 미국 (US)</option><option>🇸🇬 싱가포르</option><option>🇭🇰 홍콩</option><option>🇪🇪 에스토니아</option><option>🇦🇪 UAE (두바이)</option><option>아직 미정</option></select></div><div class="form-group"><label>필요한 서비스 (복수 선택 가능)</label><div class="checkbox-group"><label class="checkbox-label"><input type="checkbox"> 법인 설립</label><label class="checkbox-label"><input type="checkbox"> 비즈니스 카드</label><label class="checkbox-label"><input type="checkbox"> 계좌 개설</label><label class="checkbox-label"><input type="checkbox"> 컴플라이언스 관리</label></div></div><div class="form-group"><label>비즈니스 설명 & 문의 내용</label><textarea rows="5" placeholder="현재 비즈니스 상황과 해외 법인 설립 목적, 궁금한 점을 자유롭게 적어주세요."></textarea></div><div class="form-group"><label>선호 연락 채널</label><select><option>이메일로 답변 받기</option><option>카카오톡으로 연락</option><option>LINE으로 연락</option></select></div><button type="submit" class="btn-primary btn-full" style="font-size:1rem;padding:16px">무료 상담 신청하기 →</button><p style="text-align:center;font-size:.78rem;color:var(--gray-400);margin-top:12px">평균 2시간 이내 답변 · 스팸 없음 · 언제든 수신 거부 가능</p></form></div></div></div></div></section>
-<footer class="footer"><div class="container"><div class="footer-top"><div class="footer-brand"><a href="index.html" class="logo"><span class="logo-b">B2B</span><span class="logo-101">101</span></a><p>해외법인 설립 & 비즈니스 카드 발행<br>원스톱 글로벌 비즈니스 솔루션</p><div class="footer-langs"><button data-lang="ko">🇰🇷 한국어</button><button data-lang="ja">🇯🇵 日本語</button><button data-lang="en">🇺🇸 English</button></div></div><div class="footer-links"><div class="footer-col"><h5>서비스</h5><a href="card.html">카드 발행</a><a href="uk.html">법인 설립</a><a href="pricing.html">요금제</a></div><div class="footer-col"><h5>지원 국가</h5><a href="uk.html">🇬🇧 영국</a><a href="us.html">🇺🇸 미국</a><a href="sg.html">🇸🇬 싱가포르</a><a href="hk.html">🇭🇰 홍콩</a></div><div class="footer-col"><h5>회사</h5><a href="about.html">회사 소개</a><a href="faq.html">FAQ</a><a href="contact.html">문의하기</a></div><div class="footer-col"><h5>연락처</h5><a href="#">💬 카카오: @b2b101</a><a href="#">📱 LINE: @b2b101jp</a><a href="#">✉️ hello@b2b101.com</a></div></div></div><div class="footer-bottom"><p>© 2025 B2B101. All rights reserved.</p><p>본 서비스는 법무·세무 자문을 대체하지 않습니다.</p></div></div></footer><div class="toast" id="toast">✓ 완료!</div><script src="js/i18n.js"></script><script src="js/main.js"></script></body></html>
+<!-- NAV + ANNOUNCE + HERO share one relative wrapper so both bars float transparently over the gradient -->
+<div class="hero-wrap">
+<div id="nav-placeholder"></div>
+
+<div class="hero-zone" style="padding-bottom:40px">
+  <section class="subhero">
+    <div class="hero-slideshow">
+      <div class="hero-slide active" style="background-image:url('images/b2b101-office-team.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/b2b101-boardroom.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/city-riverfront.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/riverwalk-day.png')"></div>
+      <div class="hero-slide" style="background-image:url('images/lake-dock.jpg')"></div>
+    </div>
+    <div class="container subhero-inner">
+      <h1 class="fade-up">Let's build your business together</h1>
+      <p class="fade-up">Tell us what you're working on — a dedicated manager will get back to you within a few hours.</p>
+    </div>
+  </section>
+</div>
+</div><!-- /.hero-wrap -->
+
+<section class="form-section">
+  <div class="container">
+    <div class="contact-photo-band fade-up">
+      <img class="parallax-img" loading="lazy" decoding="async" src="images/support-headset-manager.jpg" alt="Dedicated account manager">
+      <div class="contact-photo-band-tint"></div>
+      <div class="contact-photo-band-text">
+        <h3>A dedicated manager, not a ticket queue</h3>
+        <p>Real people who know your account — from first consultation through ongoing operations.</p>
+      </div>
+    </div>
+
+    <div class="contact-methods fade-up">
+      <div class="contact-method"><div class="cm-ic">✉️</div><h4>Email</h4><p>hello@b2b101.com</p></div>
+      <div class="contact-method"><div class="cm-ic">💬</div><h4>Live Chat</h4><p>Available in the app, 24/7</p></div>
+      <div class="contact-method"><div class="cm-ic">📞</div><h4>Phone</h4><p>Mon–Fri, 9am–6pm</p></div>
+    </div>
+
+    <div class="form-wrap fade-up">
+      <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:8px">Send us a message</h2>
+      <p style="color:var(--slate);font-size:.9rem;margin-bottom:28px">Free, no obligation — we'll recommend the best structure for your business.</p>
+      <form onsubmit="return false">
+        <div class="form-grid">
+          <div class="form-field"><label for="fname">First Name *</label><input id="fname" type="text" placeholder="John" required></div>
+          <div class="form-field"><label for="lname">Last Name *</label><input id="lname" type="text" placeholder="Doe" required></div>
+          <div class="form-field"><label for="email">Email *</label><input id="email" type="email" placeholder="you@company.com" required></div>
+          <div class="form-field"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="+1 555 000 0000"></div>
+          <div class="form-field full"><label for="company">Company Name</label><input id="company" type="text" placeholder="Your company"></div>
+          <div class="form-field full">
+            <label for="service">I'm interested in *</label>
+            <select id="service" required>
+              <option value="">Select a service</option>
+              <option>Company Formation</option>
+              <option>Card Issuance</option>
+              <option>Bank Account Opening</option>
+              <option>Payment Network Affiliation</option>
+              <option>Financial Licensing</option>
+              <option>Ready-Made Companies</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us a bit about your business and what you're looking for..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-navy form-submit">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="zoom-components.js"></script>
+</body>
+</html>
