@@ -157,32 +157,32 @@ var FOOTER_HTML = `
     </div>
     <div class="footer-col">
       <h5>Solutions</h5>
-      <a href="#">Membership Benefits</a>
-      <a href="#">Institutional Services</a>
-      <a href="#">Referral Program</a>
-      <a href="#">Pricing</a>
+      <a href="javascript:void(0)">Membership Benefits</a>
+      <a href="javascript:void(0)">Institutional Services</a>
+      <a href="javascript:void(0)">Referral Program</a>
+      <a href="javascript:void(0)">Pricing</a>
     </div>
     <div class="footer-col">
       <h5>Company</h5>
-      <a href="#">About Us</a>
-      <a href="#">Security System</a>
-      <a href="#">Compliance</a>
-      <a href="#">Careers</a>
+      <a href="javascript:void(0)">About Us</a>
+      <a href="javascript:void(0)">Security System</a>
+      <a href="javascript:void(0)">Compliance</a>
+      <a href="javascript:void(0)">Careers</a>
     </div>
     <div class="footer-col">
       <h5>Resources</h5>
-      <a href="#">Support</a>
-      <a href="#">FAQ</a>
+      <a href="javascript:void(0)">Support</a>
+      <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact Us</a>
-      <a href="#">Partnerships</a>
+      <a href="javascript:void(0)">Partnerships</a>
     </div>
   </div>
   <div class="container footer-bottom">
     <div class="legal">
       <span>© 2025 B2B101. All rights reserved.</span>
-      <a href="#">Privacy Notice</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Cookie Notice</a>
+      <a href="javascript:void(0)">Privacy Notice</a>
+      <a href="javascript:void(0)">Terms of Use</a>
+      <a href="javascript:void(0)">Cookie Notice</a>
     </div>
   </div>
 </footer>
