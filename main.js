@@ -2,7 +2,7 @@
    B2B101 — SHARED COMPONENTS
    Edit NAV_HTML / FOOTER_HTML here ONCE — every page that has
    <div id="nav-placeholder"></div> and <div id="footer-placeholder"></div>
-   plus <script src="main.js"></script> picks up the change
+   plus <script src="/main.js"></script> picks up the change
    automatically. Don't hand-edit the nav or footer inside individual
    page files — edit it here instead.
    ============================================================ */
@@ -10,15 +10,15 @@
 var NAV_HTML = `
 <nav class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="index.html" class="logo">B2B<span>101</span></a>
+    <a href="/" class="logo">B2B<span>101</span></a>
     <ul class="nav-links">
       <li><span data-mega>Services <span class="nav-arrow">▾</span></span></li>
       <li><span data-mega>Benefits &amp; Solutions <span class="nav-arrow">▾</span></span></li>
-      <li><a href="contact.html">Pricing</a></li>
+      <li><a href="/contact/">Pricing</a></li>
       <li><span data-mega>Company <span class="nav-arrow">▾</span></span></li>
     </ul>
     <div class="nav-right">
-      <a href="contact.html" class="btn btn-grad btn-sm">Free Consultation</a>
+      <a href="/contact/" class="btn btn-grad btn-sm">Free Consultation</a>
       <button class="menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -29,7 +29,7 @@ var NAV_HTML = `
 <!-- ANNOUNCE BAR — sits just below the nav, scrolls away naturally while the nav stays -->
 <div class="announce" id="announce">
   <span>Global company formation, card issuance, and payments — under one roof</span>
-  <a href="contact.html" class="pill">Start a Consultation →</a>
+  <a href="/contact/" class="pill">Start a Consultation →</a>
 </div>
 
 <!-- MEGA MENU — doubles as the mobile nav (it's the only menu surface once the screen narrows,
@@ -44,28 +44,28 @@ var NAV_HTML = `
       <div class="mega-side-item" data-panel="p5">Benefits &amp; Solutions <span>›</span></div>
       <div class="mega-side-item" data-panel="p6">Company <span>›</span></div>
       <div class="mega-side-item" data-panel="p4">Support &amp; Resources <span>›</span></div>
-      <a href="contact.html" class="mega-side-item mega-side-link">Pricing</a>
+      <a href="/contact/" class="mega-side-item mega-side-link">Pricing</a>
     </div>
     <div class="mega-content">
       <div class="mega-panel active" id="p1">
         <h4>Popular Services</h4>
         <p class="desc">The services B2B101 clients ask for most.</p>
         <div class="mega-icon-grid">
-          <a href="formation.html" class="mega-icon-item"><div class="ic">🏢</div><span>Company Formation</span></a>
-          <a href="banking-card.html" class="mega-icon-item"><div class="ic">💳</div><span>Card Issuance</span></a>
-          <a href="banking-card.html" class="mega-icon-item"><div class="ic">🏦</div><span>Bank Account Opening</span></a>
-          <a href="payment-network.html" class="mega-icon-item"><div class="ic">🔗</div><span>Payment Network Affiliation</span></a>
-          <a href="licensing.html" class="mega-icon-item"><div class="ic">📜</div><span>Financial Licensing</span></a>
-          <a href="ready-made.html" class="mega-icon-item"><div class="ic">🏛️</div><span>Ready-Made Companies</span></a>
+          <a href="/formation/" class="mega-icon-item"><div class="ic">🏢</div><span>Company Formation</span></a>
+          <a href="/banking-card/" class="mega-icon-item"><div class="ic">💳</div><span>Card Issuance</span></a>
+          <a href="/banking-card/" class="mega-icon-item"><div class="ic">🏦</div><span>Bank Account Opening</span></a>
+          <a href="/payment-network/" class="mega-icon-item"><div class="ic">🔗</div><span>Payment Network Affiliation</span></a>
+          <a href="/licensing/" class="mega-icon-item"><div class="ic">📜</div><span>Financial Licensing</span></a>
+          <a href="/ready-made/" class="mega-icon-item"><div class="ic">🏛️</div><span>Ready-Made Companies</span></a>
         </div>
       </div>
       <div class="mega-panel" id="p2">
         <h4>Company Formation</h4>
         <p class="desc">Everything to get your company registered and running.</p>
         <div class="mega-icon-grid">
-          <a href="formation.html" class="mega-icon-item"><div class="ic">🏢</div><span>Company Formation</span></a>
-          <a href="formation.html" class="mega-icon-item"><div class="ic">📊</div><span>Compare Jurisdictions</span></a>
-          <a href="ready-made.html" class="mega-icon-item"><div class="ic">🏛️</div><span>Ready-Made Companies</span></a>
+          <a href="/formation/" class="mega-icon-item"><div class="ic">🏢</div><span>Company Formation</span></a>
+          <a href="/formation/" class="mega-icon-item"><div class="ic">📊</div><span>Compare Jurisdictions</span></a>
+          <a href="/ready-made/" class="mega-icon-item"><div class="ic">🏛️</div><span>Ready-Made Companies</span></a>
           <a href="#" class="mega-icon-item"><div class="ic">🛡️</div><span>Compliance</span></a>
         </div>
       </div>
@@ -73,11 +73,11 @@ var NAV_HTML = `
         <h4>Payments &amp; Finance</h4>
         <p class="desc">Banking, cards, and payment infrastructure for global business.</p>
         <div class="mega-icon-grid">
-          <a href="banking-card.html" class="mega-icon-item"><div class="ic">💳</div><span>Card Issuance</span></a>
-          <a href="banking-card.html" class="mega-icon-item"><div class="ic">🏦</div><span>Bank Account Opening</span></a>
-          <a href="payment-network.html" class="mega-icon-item"><div class="ic">🔗</div><span>Payment Network Affiliation</span></a>
-          <a href="licensing.html" class="mega-icon-item"><div class="ic">📜</div><span>Financial Licensing</span></a>
-          <a href="banking-card.html" class="mega-icon-item"><div class="ic">💱</div><span>Currency Exchange</span></a>
+          <a href="/banking-card/" class="mega-icon-item"><div class="ic">💳</div><span>Card Issuance</span></a>
+          <a href="/banking-card/" class="mega-icon-item"><div class="ic">🏦</div><span>Bank Account Opening</span></a>
+          <a href="/payment-network/" class="mega-icon-item"><div class="ic">🔗</div><span>Payment Network Affiliation</span></a>
+          <a href="/licensing/" class="mega-icon-item"><div class="ic">📜</div><span>Financial Licensing</span></a>
+          <a href="/banking-card/" class="mega-icon-item"><div class="ic">💱</div><span>Currency Exchange</span></a>
         </div>
       </div>
       <div class="mega-panel" id="p5">
@@ -104,8 +104,8 @@ var NAV_HTML = `
         <h4>Support &amp; Resources</h4>
         <p class="desc">Get help, find answers, or get in touch.</p>
         <div class="mega-icon-grid">
-          <a href="contact.html" class="mega-icon-item"><div class="ic">✉️</div><span>Contact Us</span></a>
-          <a href="faq.html" class="mega-icon-item"><div class="ic">❓</div><span>FAQ</span></a>
+          <a href="/contact/" class="mega-icon-item"><div class="ic">✉️</div><span>Contact Us</span></a>
+          <a href="/faq/" class="mega-icon-item"><div class="ic">❓</div><span>FAQ</span></a>
           <a href="#" class="mega-icon-item"><div class="ic">🎧</div><span>Support</span></a>
           <a href="#" class="mega-icon-item"><div class="ic">🤝</div><span>Partnerships</span></a>
         </div>
@@ -140,7 +140,7 @@ var FOOTER_HTML = `
   </div>
   <div class="container footer-cols">
     <div class="footer-brand">
-      <a href="index.html" class="logo">B2B<span>101</span></a>
+      <a href="/" class="logo">B2B<span>101</span></a>
       <p>End-to-end global business formation, card issuance, and payment infrastructure — all in one platform.</p>
       <div class="footer-social">
         <a href="#">IG</a><a href="#">IN</a><a href="#">X</a><a href="#">YT</a>
@@ -148,12 +148,12 @@ var FOOTER_HTML = `
     </div>
     <div class="footer-col">
       <h5>Services</h5>
-      <a href="formation.html">Company Formation</a>
-      <a href="banking-card.html">Card Issuance</a>
-      <a href="banking-card.html">Bank Account Opening</a>
-      <a href="payment-network.html">Payment Network Affiliation</a>
-      <a href="licensing.html">Financial Licensing</a>
-      <a href="ready-made.html">Ready-Made Companies</a>
+      <a href="/formation/">Company Formation</a>
+      <a href="/banking-card/">Card Issuance</a>
+      <a href="/banking-card/">Bank Account Opening</a>
+      <a href="/payment-network/">Payment Network Affiliation</a>
+      <a href="/licensing/">Financial Licensing</a>
+      <a href="/ready-made/">Ready-Made Companies</a>
     </div>
     <div class="footer-col">
       <h5>Solutions</h5>
@@ -172,8 +172,8 @@ var FOOTER_HTML = `
     <div class="footer-col">
       <h5>Resources</h5>
       <a href="javascript:void(0)">Support</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/contact/">Contact Us</a>
       <a href="javascript:void(0)">Partnerships</a>
     </div>
   </div>

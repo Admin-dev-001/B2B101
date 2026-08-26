@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact Us — B2B101</title>
+<meta name="description" content="Get in touch with B2B101 for a free consultation on company formation, card issuance, or payments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/main.css">
+</head>
+<body>
+
+<!-- NAV + ANNOUNCE + HERO share one relative wrapper so both bars float transparently over the gradient -->
+<div class="hero-wrap">
+<div id="nav-placeholder"></div>
+
+<div class="hero-zone" style="padding-bottom:40px">
+  <section class="subhero">
+    <div class="hero-slideshow">
+      <div class="hero-slide active" style="background-image:url('/images/b2b101-office-team.png')"></div>
+      <div class="hero-slide" style="background-image:url('/images/b2b101-boardroom.png')"></div>
+      <div class="hero-slide" style="background-image:url('/images/city-riverfront.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('/images/riverwalk-day.png')"></div>
+      <div class="hero-slide" style="background-image:url('/images/lake-dock.jpg')"></div>
+    </div>
+    <div class="container subhero-inner">
+      <h1 class="fade-up">Let's build your business together</h1>
+      <p class="fade-up">Tell us what you're working on — a dedicated manager will get back to you within a few hours.</p>
+    </div>
+  </section>
+</div>
+</div><!-- /.hero-wrap -->
+
+<section class="form-section">
+  <div class="container">
+    <div class="contact-photo-band fade-up">
+      <img class="parallax-img" loading="lazy" decoding="async" src="/images/support-headset-manager.jpg" alt="Dedicated account manager">
+      <div class="contact-photo-band-tint"></div>
+      <div class="contact-photo-band-text">
+        <h3>A dedicated manager, not a ticket queue</h3>
+        <p>Real people who know your account — from first consultation through ongoing operations.</p>
+      </div>
+    </div>
+
+    <div class="contact-methods fade-up">
+      <div class="contact-method"><div class="cm-ic">✉️</div><h4>Email</h4><p>hello@b2b101.com</p></div>
+      <div class="contact-method"><div class="cm-ic">💬</div><h4>Live Chat</h4><p>Available in the app, 24/7</p></div>
+      <div class="contact-method"><div class="cm-ic">📞</div><h4>Phone</h4><p>Mon–Fri, 9am–6pm</p></div>
+    </div>
+
+    <div class="form-wrap fade-up">
+      <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:8px">Send us a message</h2>
+      <p style="color:var(--slate);font-size:.9rem;margin-bottom:28px">Free, no obligation — we'll recommend the best structure for your business.</p>
+      <form onsubmit="return false">
+        <div class="form-grid">
+          <div class="form-field"><label for="fname">First Name *</label><input id="fname" type="text" placeholder="John" required></div>
+          <div class="form-field"><label for="lname">Last Name *</label><input id="lname" type="text" placeholder="Doe" required></div>
+          <div class="form-field"><label for="email">Email *</label><input id="email" type="email" placeholder="you@company.com" required></div>
+          <div class="form-field"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="+1 555 000 0000"></div>
+          <div class="form-field full"><label for="company">Company Name</label><input id="company" type="text" placeholder="Your company"></div>
+          <div class="form-field full">
+            <label for="service">I'm interested in *</label>
+            <select id="service" required>
+              <option value="">Select a service</option>
+              <option>Company Formation</option>
+              <option>Card Issuance</option>
+              <option>Bank Account Opening</option>
+              <option>Payment Network Affiliation</option>
+              <option>Financial Licensing</option>
+              <option>Ready-Made Companies</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us a bit about your business and what you're looking for..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-navy form-submit">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="/main.js"></script>
+</body>
+</html>
